@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box; 
+    font-size: 0px;
+}
+
+.oneBig {
+	width: 80%;
+	height: 100px;
+	background-color: #F5C6D6;
+	margin: auto;
+}
+
+.small1 {
+	width: 25%;
+	height: 100px;
+	background-color: #EE2E84;
+	display: inline-block;
+}
+
+.half {
+	width: 50%;
+	height: 100px;
+	background-color: #85CFD8;
+	display: inline-block;
+}
+
+.green {
+	width: 78%;
+	height: 100px;
+	background-color: #8DC63F;
+	display: inline-block;
+
+}
+
+.orange {
+	width: 22%;
+	height: 100px;
+	background-color: #E76E34;
+	display: inline-block;
+	
+}
+

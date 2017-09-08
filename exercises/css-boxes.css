@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box; 
+    font-size: 0px;
+}
+.oneBig{
+	width: 20px;
+	height: 20px;
+	color: #F5C6D6;
+}
+
+.oneSmall{
+	
+	width:20px;
+	height:20px;
+	color: #EE2E84;
+}
+		
+.twoSmall{
+	width:20px;
+	height:20px;
+	color: #EE2E84;
+	
+}
+ 
+.threeSmall{
+	width:20px;
+	height:20px;
+	color: #EE2E84;
+}
+.fourSmall{
+	width:20px;
+	height:20px;
+	color: #EE2E84;
+	
+}
+.oneHalf{
+	width:20px;
+	height:20px;
+	
+	color:#85CFD8
+	
+}
+.twoHalf{
+	width:20px;
+	height:20px;
+	color: #85CFD8
+}
+
+.aThird{
+	width:20px;
+	height:20px;
+	color:#8DC63F
+}
+		
+.fithSmall{
+	width:20px;
+	height:20px;
+	color:#E76E34
+}
+   
