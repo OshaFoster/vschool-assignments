@@ -1,0 +1,42 @@
+.ggparent{
+	border:2px;
+	background-color: #b30000;
+	height: 400px;
+	width: 700px;
+	position: relative;
+}
+
+
+.parent{
+	border:2px;
+	background-color: white;
+	height: 200px;
+	width: 350px;
+	position: relative;
+	
+
+	
+	
+}
+
+.child1{
+	background-color: #b30000;
+	width: 50px;
+    height: 150px;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	left:50%;
+	top:50%;
+	
+	
+}
+.child2 {
+	background-color:#b30000;
+	width:150px;
+	height:50px;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	left:50%;
+	top:50%;
+	
+}

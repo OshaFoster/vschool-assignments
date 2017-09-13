@@ -1,0 +1,28 @@
+body{
+	background-color: #f2f0eb;
+}
+
+
+div {
+	padding-top: 50px;
+}
+
+.firstDiv {
+	background-color: #80b9d1;
+	width: 600px;
+}
+
+.secondDiv {
+	background-color:#96e2c9;
+	width: 600px
+}
+
+.thirdDiv {
+	background-color:#e05928;
+	width: 600px
+}
+
+button {
+	 background-color:#272740;
+    color:white;
+  

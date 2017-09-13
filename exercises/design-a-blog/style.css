@@ -1,0 +1,40 @@
+body{
+	overflow: scroll;
+	background-color: ivory;
+}
+.parent {
+	
+	border:2px;
+	background-color:ivory;
+	height: 100%;
+	width: 100%;
+	position: relative;
+*/
+	
+}
+
+header {
+		background-image: url("https://i.ytimg.com/vi/o2TaybKpwFo/maxresdefault.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 400px;
+	
+	
+}
+
+h1 {
+	text-align:center;
+	font-size: 80px;
+	color: purple;
+	font-family: "palatino";
+	
+}
+
+h2 {
+	text-align: center;
+}
+
+h3 {
+	text-align: center;
+	
+}
