@@ -1,0 +1,92 @@
+	* {
+	font-size: 0px;
+	box-sizing: border-box;
+}
+
+.oneBig {
+	width: 80%;
+	margin: auto;
+}
+
+.lightPink {
+	height: 125px;
+	background-color: #F5C6D6;
+}
+
+.hotPink {
+	height: 125px;
+	background-color: #EE2E84;
+	width: 25%;
+	display: inline-block
+}
+
+.lightBlue {
+	height: 125px;
+	width: 50%;
+	background-color: #85CFD8;
+	display: inline-block;
+}
+
+.green {
+	height: 125px;
+	width: 78%;
+	background-color: #8DC63F;
+	display: inline-block;
+}
+
+.orange {
+	height: 125px;
+	width: 22%;
+	background-color: #E76E34;
+	display: inline-block;
+}
+
+.addBorder {
+	border: 10px solid white;
+}
+
+.margin {
+	margin-top: 90px;
+}
+
+@media (max-width: 768px) {
+	.hotPink {
+		width: 100%;
+		height: 40px;
+		display: block;
+	}
+}
+
+@media (max-width: 768px) {
+	.addBorder {
+		border: 1px solid white;
+	}
+}
+
+@media (max-width: 768px) {
+	.lightBlue {
+		width: 100%;
+		height: 40px;
+		display: block;
+	}
+}
+
+@media (max-width: 768px) {
+	.green {
+		width: 100%;
+		height: 40px;
+		display: block;
+	}
+}
+@media (max-width: 768px){
+	.orange {
+		width: 100%;
+		height: 40px;
+		display: block;
+}
+	@media (max-width: 768px){
+	.lightPink {
+		width: 100%;
+		height: 40px;
+		display: block;
+}

@@ -4,43 +4,62 @@
 <head>
 	<meta charset="UTF-8" content="width=device-width, initial-scale=1">
 	<title>Mario Pest Control</title>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
-	<header>
-	<h1>Mario Pest Control</h1>
+	<header class="header">
+		<h1>Mario Pest Control</h1>
 	</header>
 
+	<div class="parent">
+		<div class="badGuys">
+			<img class="image" src="GoombaNSMB.png" alt="goomba">
 
-	<div class="badGuys">
-		<img class="image" src="GoombaNSMB.png" alt="goomba">
+			<ul>
+				<li class="name goomba">Goomba</li>
+				<l>Pricing:<span id="goomba-price" type=number>5</span>coins</l>
+				<li>Total Caught: </li>
+				<input id="goomba-total" type="number" min="0" class="input" />
+				<p>Cost:$ <span id="total-goomba"></span></p>
+			</ul>
+		</div>
+		<div class="badGuys">
+			<img class="image" src="Bleep-Cheep.png" alt="goomba">
 
-		<ul>
-			<li class="name">name</li>
-			<li>Total Caught = x</li>
-			<li>Total Price = y </li>
-		</ul>
+			<ul>
+				<li class="name bleep">Cheep-cheep</li>
+				<l>Pricing: <span id="cheep-price" type=number>11</span>coins </l>
+				<li>Total Caught:</li>
+				<input id="cheep-total" type="number" min="0" class="input" />
+				<p>Cost:$ <span id="total-cheep"></span></p>
+			</ul>
+		</div>
+		<div class="badGuys">
+			<img class="image" src="Bob-omb_(MKWii).png" alt="goomba">
+
+			<ul>
+				<li class="name bob">Bob-ombs</li>
+				<l>Pricing: <span id="bob-price" type="number">7</span>coins</l>
+				<li class="caught">Total Caught:</li>
+				<input id="bob-total" type="number" min="0" class="input">
+				<p>Cost:$ <span id="total-bob"></span></p>
+			</ul>
+		</div>
+		<form id="total-price">
+			<button type="button"id="grand-total">Total:</button>
+			<span id="total-all" type="number">$</span> 
+		</form>
+
 	</div>
-	<div class="badGuys">
-	<img class="image"src="Bleep-Cheep.png" alt="goomba">
+	<footer>
+		<span class="email">mario_smashes@shroom.com</span>
+		<span class="http">http="url:mariohomepage</span>
+		<span class="address">Address: Mario Land Castle</span>
+	</footer>
 
-	<ul>
-		<li class="name">name</li>
-		<li>Total Caught = x</li>
-		<li>Total Price = y </li>
-	</ul>
-	</div>
-	<div class="badGuys">
-	<img class="image" src="Bob-omb_(MKWii).png" alt="goomba">
-
-	<ul>
-		<li class="name">name</li>
-		<li>Total Caught = x</li>
-		<li>Total Price = y </li>
-	</ul>
-</div>
 	<script src="mario.js"></script>
 </body>
 
