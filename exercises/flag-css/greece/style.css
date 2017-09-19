@@ -1,42 +1,109 @@
-.ggparent{
-	border:2px;
-	background-color: #b30000;
-	height: 400px;
-	width: 700px;
-	position: relative;
-}
-
-
-.parent{
-	border:2px;
+.parent {
+	height:450px;
+	width:600px;
 	background-color: white;
-	height: 200px;
+	display: relative;
+}
+
+.blueBox {
+	height: 250px;
+	width: 250px;
+	background-color: white;
+	display: absolute;
+	display:inline-block;
+	
+}
+
+.smLine {
+	height: 50px;
 	width: 350px;
-	position: relative;
-	
+	float: right;
+	top: 0px;
+	margin-bottom: 50px;
+	background-color: blue;
+	display: inline-block;
 
+}
+
+
+.smLine2 {
+	height: 50px;
+	width: 350px;
+	float: right;
+	top: 50px;
+	margin-bottom: 50px;
+	background-color: blue;
+	display: inline-block;
+
+}
+
+.smLine3 {
+	height: 50px;
+	width: 350px;
+	float: right;
+	top: 100px;
+	margin-bottom: 50px;
+	background-color: blue;
+	display: inline-block;
+
+}
+
+.bigLine {
+	height: 50px;
+	width: 600px;
+	float: right;
+	top: 150px;
+	margin-bottom: 50px;
+	background-color: blue;
+	display: inline-block;
+	
+}
+.bigLine2 {
+	height: 50px;
+	width: 600px;
+	float: right;
+	top: 200px;
+	margin-bottom: 50px;
+	background-color: blue;
+	display: inline-block;
+	
+}
+
+
+.smBox {
+	width:100px;
+	height:100px;
+	background-color: blue;
+	display: inline-block;
+
+}
+
+.smBox2 {
+	width:100px;
+	height:100px;
+	background-color: blue;
+	float: right;
+	top: 0px;
+	display: inline-block;
+	
+}
+.smBox3 {
+	width:100px;
+	height:100px;
+	margin-top: 46px;
+	background-color: blue;
+	display: inline-block;
 	
 	
 }
 
-.child1{
-	background-color: #b30000;
-	width: 50px;
-    height: 150px;
-	position: absolute;
-	transform: translate(-50%, -50%);
-	left:50%;
-	top:50%;
-	
-	
-}
-.child2 {
-	background-color:#b30000;
-	width:150px;
-	height:50px;
-	position: absolute;
-	transform: translate(-50%, -50%);
-	left:50%;
-	top:50%;
+.smBox4{
+	width:100px;
+	height:100px;
+	margin-top: 46px;
+	margin-left: 46px;
+	bottom: 0px;
+	background-color: blue;
+	display: inline-block;
 	
 }
