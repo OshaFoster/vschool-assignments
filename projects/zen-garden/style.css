@@ -1,3 +1,72 @@
+@import url('http://fonts.googleapis.com/css?family=Julius+Sans+One|Libre+Baskerville:400,400italic');
 .header {
-	background-image: 
+	background: #2d6360;
+	background-image: url(contours@2x.png), url(noise.png), url(gridlines.png), url(huntington.jpg);
+	background-size: cover;
+	height: 300px;
+	padding: 30px;
+}
+
+.zenGarden {
+	font-size: 50px;
+}
+
+.css {
+	text-decoration: underline dotted;
+}
+
+.title {
+	padding-left: 100px;
+	text-align: left;
+}
+
+.top {
+	height: 270px;
+}
+
+.waterMark {
+	margin-top: 50px;
+	height: 150px;
+}
+
+h1 {
+	padding-top: 50px;
+	border-bottom: none;
+	font-family: 'Julius Sans One';
+	font-size: 3em;
+	text-transform: uppercase;
+	color: white;
+}
+
+.h2 {
+	font-family: 'Libre Baskerville', sans-serif;
+	color: rgba(255, 255, 255, 0.6);
+	font-size: 1.6em;
+	font-style: italic;
+	font-weight: normal;
+}
+
+h3 {
+	margin: 2em 0 0 0;
+	color: #2e484c;
+	font-family: 'Julius Sans One', sans-serif;
+	font-size: 1.8em;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+.paragraphs {
+	
+	margin:12;
+	line-height: 2;
+	color: #325050;
+	font-family: 'Libre Baskerville', sans-serif;
+}
+
+.backgroundRow {
+	background-attachment: scroll, scroll, fixed;
+	background-color: rgba(138, 188, 159, 0.5);
+	background-image: url(contours-opaque.png), url(gridlines-opaque.png), url(bamboo.png);
+	background-repeat: repeat, repeat, no-repeat;
+	background-size: auto, auto, cover;
 }
