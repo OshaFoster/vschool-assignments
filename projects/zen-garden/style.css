@@ -1,72 +1,210 @@
-@import url('http://fonts.googleapis.com/css?family=Julius+Sans+One|Libre+Baskerville:400,400italic');
-.header {
-	background: #2d6360;
-	background-image: url(contours@2x.png), url(noise.png), url(gridlines.png), url(huntington.jpg);
-	background-size: cover;
-	height: 300px;
-	padding: 30px;
+	@import url('http://fonts.googleapis.com/css?family=Julius+Sans+One|Libre+Baskerville:400,400italic');
+	@font-face {
+		font-family: verdemoderna;
+		src: url(verdemoderna.woff);
+	}
+	
+	.header {
+		background: #2d6360;
+		background-image: url(contours@2x.png), url(noise.png), url(gridlines.png), url(huntington.jpg);
+		background-size: cover;
+		height: 300px;
+		padding: 30px;
+	}
+	
+	.headerHref {
+		margin-top: 100px;
+		display: block;
+		font-family: 'Julius Sans One', sans-serif;
+		font-size: 20px;
+		font-style: normal;
+		background-color: rgba(255, 255, 255, 0.1);
+		text-decoration: none;
+		color: aliceblue;
+		padding: 20px;
+		display: inline-block;
+		opacity: .9;
+	}
+	
+	.headerHref:hover {
+		color: aliceblue;
+		background-color: rgba(255, 255, 255, 0.3);
+		text-decoration: none;
+		transition-property: all;
+		transition-duration: 1s;
+		opacity: .9;
+	}
 }
-
 .zenGarden {
 	font-size: 50px;
 }
-
 .css {
 	text-decoration: underline dotted;
 }
-
 .title {
 	padding-left: 100px;
 	text-align: left;
+	display: inline-block
 }
-
 .top {
 	height: 270px;
 }
-
 .waterMark {
 	margin-top: 50px;
 	height: 150px;
+	width: auto;
+	display: inline-block;
 }
-
+.glyph {
+	background-color: rgba(138, 198, 149, 0.5);
+	opacity: .6;
+}
+@media (min-width: 650px) {
+	.h1 {
+		padding-top: 5px;
+		display: inline-block
+	}
+}
 h1 {
 	padding-top: 50px;
 	border-bottom: none;
+	font-size: 40px;
 	font-family: 'Julius Sans One';
-	font-size: 3em;
 	text-transform: uppercase;
 	color: white;
 }
-
+.topParagraph {
+	padding-top: 50px;
+}
 .h2 {
 	font-family: 'Libre Baskerville', sans-serif;
 	color: rgba(255, 255, 255, 0.6);
-	font-size: 1.6em;
 	font-style: italic;
 	font-weight: normal;
 }
-
 h3 {
-	margin: 2em 0 0 0;
+	padding: 20px;
+	padding: 2px;
 	color: #2e484c;
 	font-family: 'Julius Sans One', sans-serif;
-	font-size: 1.8em;
+	font-size: 24px;
 	font-weight: normal;
 	text-transform: uppercase;
 }
-
 .paragraphs {
-	
-	margin:12;
-	line-height: 2;
+	padding-right: 20px;
+	line-height: 2.5;
 	color: #325050;
 	font-family: 'Libre Baskerville', sans-serif;
+	margin-right: 30px;
+	padding-bottom: 15px;
 }
-
+ul {
+	list-style: none;
+}
 .backgroundRow {
 	background-attachment: scroll, scroll, fixed;
+	;
 	background-color: rgba(138, 188, 159, 0.5);
 	background-image: url(contours-opaque.png), url(gridlines-opaque.png), url(bamboo.png);
-	background-repeat: repeat, repeat, no-repeat;
-	background-size: auto, auto, cover;
+	background-size: cover;
 }
+.paragraphRow {
+	background-color: rgba(255, 255, 255, );
+}
+.topSideBar {
+	background-color: rgba(229, 237, 232, 1);
+	width: cover;
+}
+.midSideBar {
+	padding-top: 80px;
+	background-color: rgba(56, 79, 80, .3);
+	padding-bottom: 360px;
+}
+.topList {
+	margin: 10px;
+	color: #325050;
+	font-family: 'Julius Sans One', sans-serif;
+	font-size: 18px;
+	padding: 20px;
+	border-top: solid 1px #d9e3dc;
+	font-style: italic;
+	line-height: 2;
+}
+.a {
+	color: #325050;
+	opacity: .7;
+}
+.liSpan {
+	color: #325050;
+	opacity: .3;
+}
+@media (min-width: 800px) {
+	.bottomSideBar {
+		display: none;
+	}
+	
+	.botSideBar {
+		background-color: rgba(229, 237, 232, 1);
+		height: 900px;
+	}
+	
+	.bottomRow {
+		background-image: url(contours@2x.png), url(gridlines.png), url(noise.png), url(koi.jpg);
+		width: cover;
+		height: 300px;
+		padding: 30px;
+	}
+	
+	.bottomh2 {
+		margin-top: 30px;
+		text-align: center;
+		font-family: 'Libre Baskerville', sans-serif;
+		color: rgba(255, 255, 255, 0.6);
+		font-style: italic;
+		font-weight: normal;
+	}
+	
+	.botHref:hover {
+		color: aliceblue;
+		opacity: .9;
+	}
+	
+	.botHref {
+		color: aliceblue;
+		opacity: .9;
+	}
+	
+	.footer {
+		background-color: rgba(33, 66, 70, 1);
+		width: cover;
+		height: 180px;
+		text-align: center;
+		padding-top: 40px;
+	}
+	
+	.verde {
+		font-family: verdemoderna;
+		font-size: 60px;
+		margin: 50px;
+		margin-top: 40px;
+		color: aliceblue;
+		opacity: .8;
+		transition: color 0.25s ease-out, box-shadow 0.25s ease-out;
+	}
+	
+	.verde:hover {
+		border-radius: 100%;
+		
+		
+		color: rgba(33, 66, 70, 1);
+		background-color: rgba(255, 255, 255, 0.3);
+		text-decoration: none;
+		transition-property: all;
+		transition-duration: 1s;
+		opacity: .9;
+		background-size: 2px;
+		
+	}
+	
+	transitions check element for transition buttos and on bottom transitoin all ease out

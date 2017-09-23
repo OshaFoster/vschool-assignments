@@ -19,22 +19,37 @@ console.log("You've already lost!");
 
 var gameChoice = readlineSync.question("What would you like to do first? a : find the key, b : open the door, c : put hand in hole?")
 
-while (gameChoice === "a" || gameChoice === "b"){
+ while (gameChoice === "a" || gameChoice === "b"){
 		
-		console.log("Good choice!")
-	
+		
 	if (gameChoice === "a"){
-		var haveKey = readlineSync.question("What would you like to do next? a : find the key, b : open the door, c : put hand in hole?")
+		
+		var findKey = readlineSync.question("There is a key under the mat or a key in the hole, which do you choose: mat or hole?")
 
-	}
+	}else{ 
 		
-		
+		re
 	
-	return
 	}
-
-	console.log( "Spider in hole, your dead!")
-
+ }
+		
+//		
+//	
+//
+//	}
+//
+//	console.log( "Spider in hole, your dead!")
+//
+//console.log("Good choice!")
+//
+//
+//
+//return;
+// 
+// 
+// var y = parseInt(readlineSync.question("Enter y: "))-1;
+// var x = parseInt(readlineSync.question("Enter y: "))-1;
+//
 
 
 

@@ -1,0 +1,49 @@
+.box {
+	width: 400px;
+	height: 400px;
+	background-color: white;
+	border: 2px solid black;
+	align-content: center;
+	box-shadow: 10px 20px 30px black;
+	-webkit-transition: all 1s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+/*
+
+.box:hover {
+	background-color: blue;
+	border-radius: 50%;
+}
+*/
+
+.box {
+	
+}
+
+.box {}
+
+.box {}
+
+.box {}
+
+
+
+
+
+
+
+Blue when the mouse hovers over the square
+Red when the mouse button is held down over the square
+Yellow when the mouse button is let go over the square
+Green when the mouse is double clicked in the square
+Orange when the mouse scroll is used somewhere in the window (not just over the square).
+
+
+
+
+On hover - Change the box to a circle
+On mousedown - Change the box shadow
+On double click - Change the border thickness of the box
+On mouse wheel - Change the size of the box*/
