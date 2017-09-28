@@ -2,12 +2,10 @@ var myVar = setInterval(function(){ myTimer() }, 3000);
 
 function myTimer() {
 	
+	
+	
 
     document.getElementById("boom").innerHTML = "End Of The World";
-	
-	
-//if
-	
 	
 	
 }
@@ -28,20 +26,21 @@ function myTimer() {
 
 
 
-//	
-//}
+//////	
+////}
 //
 //function countDown(){
 //	
 //	var num = 20;
 // 
 //	for (i = 0 ; i < 20;  i++ ){
-//		console.log(num);
+//		
 //		num --;
 //		
-//		interval 1000
+//	   setInterval 1000
 //	}
-//
+//	
+//	
 //}
-
-	
+//
+//	console.log(countDown())

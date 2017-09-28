@@ -1,0 +1,48 @@
+html { 
+  background: url(https://images.unsplash.com/photo-1504964148034-86ded740d1e2?dpr=1&auto=compress,format&fit=crop&w=1350&h=&q=80&cs=tinysrgb&crop=) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.div1 {
+	text-align: center;
+	font-size:20px;
+	color:aquamarine;
+	
+}
+header {
+	font-size: 30px;
+	text-align: center;
+	color: darkslategray;
+	font-style: italic;
+	
+}
+
+.div2 {
+	text-align: center;
+	font-size:20px;
+	color:aquamarine;
+	
+}
+.div3 {
+	text-align: center;
+	font-size:20px;
+	color:aquamarine;
+	
+}
+
+.div4 {
+	text-align: center;
+	font-size:20px;
+	color:aquamarine;
+	
+}
+
+.div5 {
+	text-align: center;
+	font-size:20px;
+	color:aquamarine;
+	
+}

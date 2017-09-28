@@ -1,0 +1,48 @@
+@font-face {
+	font-family: mario-font;
+	src: url(SuperMario256.ttf);
+}
+
+.red {
+	background-color: red;
+	text-align: center;
+}
+
+h1 {
+	font-family: mario-font;
+	background-color: yellow;
+	font-size: 50px;
+}
+
+.yellow {
+	background-color: yellow;
+}
+
+.imgLuigi {
+	text-align: center;
+	
+
+}
+
+h2 {
+	font-family: mario-font;
+	background-color: white;
+	font-size: 40px;
+	text-align: center;
+	color:red;
+}
+p {
+
+	background-color: white;
+	font-size: 20px;
+	text-align: center;
+	color:red;
+}
+
+.mushroom {
+	height: 50px;
+	width: 50px;
+	background-color: yellow;
+	
+	
+}

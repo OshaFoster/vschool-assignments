@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Travel-Form</title>
+	<link rel="stylesheet" href="style.css" class="css">
+</head>
+
+<body>
+	<form id="myForm" name="myForm">
+		<header>
+			<h1><span class="h1">A Welcome Escape!</span><br> Where Can We Send You?</h1>
+		</header>
+		<div class="div1"><span>First name:</span> <input type="text" name="firstname" />
+
+			<span>Last name:</span> <input type="text" name="lastname" />
+
+			<span>Age:</span> <input type="number" name="age" /></div><br>
+
+		<div class="div2"><span>Female</span><input type="radio" name="gender" value="Female" />
+			<span> Male</span><input type="radio" name="gender" value="male" />
+			<span>Other</span><input type="radio" name="gender" value="Other" /></div>
+		<div class="div3">
+			<p>Select Places To Visit</p>
+			<input type="checkbox" name="destination" value="Europe"> Europe
+			<input type="checkbox" name="destination" value="China"> China
+			<input type="checkbox" name="destination" value="Chicago"> Chicago</div>
+		<div class="div2">
+			<p>Diatary Restrictions</p>
+			<input type="checkbox" name="restrictions" value="GlutenFree"> Gluten Free
+			<input type="checkbox" name="restrictions" value="Vegan"> Vegan
+			<input type="checkbox" name="restrictions" value="DairyFree"> Dairy Free</div><br>
+
+		<div class="div5"><input id="submit" type="button">Submit</div>
+
+
+
+	</form>
+
+
+
+</body>
+<script src="main.js"></script>
+
+</html>

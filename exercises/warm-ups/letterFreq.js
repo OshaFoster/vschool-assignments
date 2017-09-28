@@ -4,7 +4,10 @@ var phraseArray = phrase.split('');
 
 console.log(phraseArray);
 
+
+
 var letterCount = {};
+
 
 phraseArray.forEach(function(letter) { letterCount[letter] = (letterCount[letter]||0)+1; });
 

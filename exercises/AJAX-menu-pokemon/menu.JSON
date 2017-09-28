@@ -1,0 +1,64 @@
+{
+	"menu": [
+
+		{
+			"appetizers": [
+
+				{
+					"name": "Chips",
+					"price": "4.00"
+				},
+
+				{
+					"name": "Salad",
+					"price": "4.00"
+				}
+			]
+		},
+
+		{
+			"cold-sandwhiches": [
+
+				{
+					"Sandwich": "ham",
+					"Sandwich": "turykey",
+					"Sandwich": "veg"
+				}
+			]
+		},
+
+		{
+			"hot-sandwiches": [
+				{
+
+					"Sandwich": "meatball",
+					"Sandwich": "grilled cheese",
+					"Sandwich": "grilled veg"
+				}
+
+			]
+		},
+
+		{
+			"deserts": [
+				
+				{
+					"pies": ["cherry", "cream"]
+				},
+				
+				
+
+						"ice cream": ["choc", "van"],
+						"fruit": ["apple", "oranges"],
+		]
+		},
+
+		{
+			"drinks": ["soda", "milk", "juice"],
+
+		}
+
+
+	]
+
+	'{"pets":[{"name":"jack"},{"name":"john"},{"name":"joe"}]}'
