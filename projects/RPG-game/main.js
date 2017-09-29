@@ -16,12 +16,15 @@ var player = {
 	}
 };
 
+function randomInt(min, max) {
+	return Math.floor(Math.random() * (max - min)) + min;
+}
 
 var enemy = {
-	name: "Monster",
-	hitPoints: 6,
-	attackPower: 2,
-	weapon: "club",
+	name: "",
+	hitPoints: 0,
+	attackPower: 0,
+	weapon: "",
 }
 
 function Enemy(name, hitPoints, attackPower, weapon) {
@@ -31,52 +34,64 @@ function Enemy(name, hitPoints, attackPower, weapon) {
 	this.weapon = weapon;
 }
 
-var enemyGoblin = new Enemy("Goblin", 2, 2, "dagger");
-var enemyTroll = new Enemy("Troll", 1, 3, "hammer");
-var enemyMan = new Enemy("Man", 1, 2, "bow");
-
-function randomInt(min, max) {
-	return Math.floor(Math.random() * (max - min)) + min;
-}
-
-
-var chooseEnemy = function(){
+function theEnemy() {
+	var randomNum = randomInt(1, 3)
 	
-	
-	
-	
-}
-
-function fight(){
-	
-	
-	var win = randomInt(1, 3) * player.attackPower
-	var lose = randomInt(1, 3) * enemy.attackPower
-	
-	
-	if ( win > lose) {
+	if (randomNum === 1) {
 		
-		player.numBatttles + 1
-		player.hitPoints++ 
-		//console.log(player.hitPoints + "hitPo")
-		//console.log(player.numBattles + "numBat")
+		theEnemy = this.enemyTroll
+	}
+	if (randomNum === 2) {
 		
-		console.log (player.name + " you've won the battle, your enemy is defeated!")
-		
+		theEnemy = this.enemyGoblin
 	} else {
 		
-			
+		theEnemy = this.enemyMan
+		
+	}
+return theEnemy
+}
+
+theEnemy()
+
+var enemyGoblin = new Enemy("Goblin", 2, 2, "dagger");
+var enemyTroll = new Enemy("Troll", 1, 1, "hammer");
+var enemyMan = new Enemy("Man", 1, 1, "bow");
+
+
+function fight() {
+
+	var playerWin = randomInt(1,3) //* //theEnemy.attackPower 
+	
+	var playerLose = randomInt(1,3)// * //player.attackPower
+	//var playerWin = randomInt(1, 3) //* player.attackPower
+	//var playerLose = randomInt(1, 3) //* theEnemy.attackPower
+
+
+	if (playerWin > playerLose) {
+
+		player.numBatttles + 1
+		player.hitPoints++
+
+			console.log(player.hitPoints + "hitPo")
+		console.log(player.numBattles + "numBat")
+
+		console.log(player.name + " you've won the battle the enemy is defeated!")
+
+	} else {
+
+
 		player.hitPoints--
-		
-		console.log (player.name + " you've lost the battle, but you got away!")
-		
-			console.log(player.hitPoints)
-		
-			readlineSync.keyInYN("would you like to coninue walking? ")
-	
-		}
+
+			console.log(player.name + " you've lost the battle, but you got away!")
+
+		console.log(player.hitPoints)
+
+		readlineSync.keyInYN("would you like to coninue walking? ")
+
+	}
 	readlineSync.keyInYN("would you like to coninue walking? ")
-	
+
 
 }
 
@@ -84,22 +99,22 @@ function fight(){
 function walk() {
 
 	var walkChoice = randomInt(1, 3);
-   // console.log(walkChoice)
+	// console.log(walkChoice)
 	if (walkChoice === 1) {
 
-		console.log("You are walking peacefully through the forest..") 
-		
+		console.log("You are walking peacefully through the forest..")
+
 		readlineSync.keyInYN("would you like to coninue walking? ")
-		//walk()
+		walk()
 
 	} else {
 
 		console.log("You've crossed an enemy, prepare to fight!")
-		
-		fight() 
+
+		fight()
 		player.numBattles++
-		console.log(player.numBattles)
-	} 
+			console.log(player.numBattles)
+	}
 }
 
 
@@ -110,16 +125,16 @@ index = readlineSync.keyInSelect(playerName, "Welcome to the Dale, you are an el
 player.name = playerName[index]
 
 
-console.log(player.name + " you are the champion of this story lets get on your way! "), 
+console.log(player.name + " you are the champion of this story lets get on your way! "),
 
-//walk()
+	walk()
 
 
 
 while (player.life() === "Alive") {
 
-walk()
-	 
+	walk()
+
 
 
 }
