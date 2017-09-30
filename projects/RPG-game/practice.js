@@ -225,11 +225,11 @@ console.log(player.life())
 //	var choices = ['Walk', 'Fight', 'Hide', 'Inventory']
 //	
 //	
-//	index = readlineSync.keyInSelect(choices, "where would you like to start?")
-//	
-	console.log( "good start")
-
-
-function walk()(
-)
+////	index = readlineSync.keyInSelect(choices, "where would you like to start?")
+////	
+//	console.log( "good start")
+//
+//
+//function walk()(
+//)
 
