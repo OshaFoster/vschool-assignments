@@ -1,15 +1,20 @@
 var changeBox = document.getElementById("box");
 
 
-changeBox.addEventListener("mousedown", function () {
 
-	changeBox.style.boxShadow = "10px 20px 30px blue";
-});
 
 changeBox.addEventListener("dblclick", function(){
 	
-	changeBox.style.changeBorderSize
+	changeBox.style.border = "5px dotted gold"
 })
+
+
+document.addEventListener("mousewheel", function(){
+	
+	changeBox.style.height = "1000px"
+})
+
+
 
 
 

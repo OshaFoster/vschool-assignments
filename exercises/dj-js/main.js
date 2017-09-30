@@ -29,8 +29,21 @@ boxColor.addEventListener("mousewheel", function () {
 
 })
 
-boxColor.addEventListener("keypress", function (event) {
-	
 
-			boxColor.style.backgroundColor = "purple";
-})
+document.addEventListener("keydown", function (event) {
+	
+	if (event.which === 89) {
+		boxColor.style.backgroundColor = "yellow";
+	} else if (event.which === 71) {
+		boxColor.style.backgroundColor = "green";
+	} else if (event.which === 66) {
+		boxColor.style.backgroundColor = "blue";
+	} else if (event.which === 79) {
+		boxColor.style.backgroundColor = "orange";
+	} else if (event.which === 82) {
+		boxColor.style.backgroundColor = "red";
+	} else if (event.which === 80) {
+		boxColor.style.backgroundColor = "purple";
+	}
+
+});

@@ -10,29 +10,28 @@
 	-o-transition: all 0.5s ease-in-out;
 	transition: all 0.5s ease-in-out;
 }
-/*
 
 .box:hover {
 	background-color: blue;
 	border-radius: 50%;
+	box-shadow: 10px 20px 30px blue;
 }
-*/
 
-.box {
+.box:active {
 	
+	background-color: red;
+	box-shadow: 10px 20px 30px red;
 }
 
-.box {}
-
-.box {}
-
-.box {}
 
 
 
 
 
 
+
+
+/*
 
 Blue when the mouse hovers over the square
 Red when the mouse button is held down over the square
@@ -46,4 +45,5 @@ Orange when the mouse scroll is used somewhere in the window (not just over the 
 On hover - Change the box to a circle
 On mousedown - Change the box shadow
 On double click - Change the border thickness of the box
-On mouse wheel - Change the size of the box*/
+On mouse wheel - Change the size of the box
+*/

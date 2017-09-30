@@ -7,15 +7,18 @@ class Player {
 
 	}
 
-	setName = namePicked =>  this.name = namePicked;
+	setName(){
+		
+	}
 
 	
 	
-	gotHit = () => 
+	gotHit() 
 		
 	
 
-	gotPoweredUp = () => {
+	gotPoweredUp()
+	{
 		
 		
 

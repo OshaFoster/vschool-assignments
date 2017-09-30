@@ -1,14 +1,28 @@
-var myVar = setInterval(function(){ myTimer() }, 3000);
+var myVar = setInterval(function(){ myTimer() }, 1000);
+
+var countDown = 4
 
 function myTimer() {
 	
 	
+	document.getElementById("boom").innerHTML = countDown
+	countDown--
+	
+	if (countDown === -1) {
+		document.getElementById("boom").innerHTML = "End Of The World";
+		clearInterval(myVar);
+	}
 	
 
-    document.getElementById("boom").innerHTML = "End Of The World";
+    
 	
 	
 }
+
+
+
+
+
 //
 //var myVar = setInterval(function(){ myTimer() }, 4000);
 //
@@ -22,12 +36,9 @@ function myTimer() {
 //	set interval updates every second 1000 subtract 1 from time
 // change timer inner html
 //if  time is 0 add message to document.get emelment 
-
-
-
-
-//////	
-////}
+//
+//
+//
 //
 //function countDown(){
 //	
