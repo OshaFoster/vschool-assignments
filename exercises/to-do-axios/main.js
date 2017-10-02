@@ -9,18 +9,23 @@ document.getElementById("send").addEventListener("click", function(){
 	
 	axios.post("https://api.vschool.io/osha/todo", newItem).then(function(response) {
 		
-		list.innerHTML += response.data.title
+		list.innerHTML +=  response.data.title 
+		list.innerHTML +=  response.data.price 
 	});
 });
 
 
 axios.get("https://api.vschool.io/osha/todo").then(function(response) {
 	
-	var list = document.getElementById("list")
+	var list = document.getElementById("listTitle")
 	
 	for (var i =0; i <response.data.length; i++){
 		
-		list.innerHTML += "<l>" + response.data[i].title + "</l>"
+		list.innerHTML += "<ul> List Item: "  + response.data[i].title + "</ul>" +  "<l>" + response.data[i].price + "</l>"
+		
+		
+		
+		//list.innerHTML += "<ul>" + response.data[i].price + "</ul>" 
 //			
 //			response.data[i].title =+ response.data
 //		

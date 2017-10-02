@@ -7,8 +7,17 @@
 	width: 80%;
 }
 
+.div1 { 
+  background: url("https://images.unsplash.com/photo-1454587399083-b11b22f48fb6?dpr=1&auto=compress,format&fit=crop&w=1300&h=&q=80&cs=tinysrgb&crop=") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 h1 {
 	text-align: center;
+	
 }
 
 p {

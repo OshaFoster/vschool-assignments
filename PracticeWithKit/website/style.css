@@ -1,0 +1,39 @@
+.parent {
+	width: 75%;
+	background-color: gray;
+	margin: auto;
+	padding: 20px;
+	position: relative;
+}
+
+.div2,
+.div1 {
+	display: inline-block;
+}
+
+@media screen and (max-width: 600px) {
+	
+	.div2
+	 {
+		color: red;
+		
+		
+	}
+}
+
+.img {
+	height: 200px;
+	margin: 20px auto;
+}
+
+.div2 {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 55%;
+	border: 2px solid black;
+	width: 35%;
+	padding: 15px;
+	max-height: 160px;
+	overflow: scroll;
+}

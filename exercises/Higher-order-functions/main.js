@@ -1,4 +1,4 @@
-var cars = [  
+ var cars = [  
     {make: "Ford", model: "E150", price: 10000, year:1975},
     {make: "Chevy", model: "Camaro", price: 20010, year:2006},
     {make: "Toyota", model: "Tacoma", price: 30900, year:2008},
@@ -42,7 +42,7 @@ var oneOrMore = cars.some(function(car){
 	return cars.model === "E150"
 })
 
-console.log("There is one or more E150s");
+console.log("There is one or more E150s" + oneOrMore);
 
 
 var oneOrMore = cars.every(function(car){

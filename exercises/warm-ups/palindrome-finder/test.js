@@ -3,9 +3,9 @@ var assert = chai.assert;
 
 var isPalindrome = require("./app.js");
 
-descripbe('checks palindrome', function (){
+describe('checks palindrome', function (){
 	
-	it("shoule retutn false if not a palindrome", function(){
+	it("should return false if not a palindrome", function(){
 		
 		assert.equal(isPalindrome('palindrome'), false)
 	})
