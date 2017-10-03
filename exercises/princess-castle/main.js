@@ -1,5 +1,5 @@
 class Player {
-	constructor(name, totalCoins, status, star) {
+	constructor(name) {
 		this.name = name;
 		this.totalCoins = 0;
 		this.status = "Powered Up";
@@ -7,90 +7,81 @@ class Player {
 
 	}
 
-	setName(){
-		
+	setName(namePicked) {
+
+		this.name = namePicked
 	}
 
-	
-	
-	gotHit() 
-		
-	
 
-	gotPoweredUp()
-	{
-		
-		
+	gotHit() {
 
-	}
-
-	gameActive = () => {
-
+		if (this.status === "Powered Up") {
+			return this.status = "Big"
+		} else if (this.status === "Big") {
+			return this.status = "Small"
+		} else if (this.status === "Small") {
+			return this.status = "Dead"
+		}
 
 	}
 
-	 addCoin = () => { 
+	gotPoweredUp() {
 
+		if (this.status === "Small") {
+
+			return this.status = "Big"
+
+		} else if (this.status === "Big") {
+
+			return this.status = "Powered Up"
+		}
 	}
 
-	 print = () => {
+	gameActive() {
+
+		if (this.status === "Dead") {
+
+			return false
+		}
+	}
+	addCoin() {
+
+		return this.totalCoins += 1
+	}
+
+	print() {
+
+		console.log(charecter)
+	}
+
+	randomRange() {
+
+		let randomNum = randomInt(0, 3)
+		if (randomNum === 0) {
+			this.gotHit()
+			console.log(this.status)
+		} else if (randomNum === 1) {
+			this.gotPoweredUp()
+			console.log(this.status)
+		} else if (randomNum === 2) {
+			this.addCoin()
+			console.log(this.totalCoins)
+		}
+
 
 	}
-	 
-	 randomRange = ()=> {
-		 
-		Math.floor(Math.random() * 4)
-	 }
-
 
 }
 
 
+const charecter = new Player("Mario", 2, "Powered Up", true)
+charecter.randomRange()
+charecter.randomRange()
+charecter.randomRange()
 
 
-//
-//name of type String
-//totalCoins of type Number
-//status of type String (options are Powered Up, Big,Small, and Dead)
-//star of type Boolean (Is a star active?)
-//setName of type
 
-function -sets name to "Mario"
-or "Luigi".Has a parameter called namePicked where you pass in "Mario"
-or "Luigi"
+function randomInt(min, max) {
+	return Math.floor(Math.random() * (max - min)) + min;
 
-
-gotHit of type
-function -this is called whenever the player is hit by an enemy.gotHit() will set the status property accordingly.(Statuses go from "Powered Up"
-	to "Big"
-	to "Small"
-	to "Dead".)
-//
-gotPowerup of type
-function -called when a powerup is received and sets the status accordingly
-
-gameActive of type Boolean, true by
-default, becomes false when status is Dead
-
-addCoin of function -adds a coin to totalCoins
-
-print of type
-function -prints to the console the name, totalCoins, status, and star properties.Make sure you make this look nice such as:
-	Name: Luigi,
-	Status: Small, etc, etc
-
-Create a random range
-function that returns either 0, 1, or 2.
-
-If the value is 0 call the gotHit()
-function on the object.
-If the value is 1 call the gotPowerup()
-function on the object
-If the value is 2 call the addCoin()
-function
-
-Then call the print
-function on the object.
-
-Perform this random operation 3 different times and call that print
-function 3 different times.
+}

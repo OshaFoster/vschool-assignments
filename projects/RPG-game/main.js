@@ -69,7 +69,7 @@ var enemyGoblin = new Enemy(" foul smelling Goblin", 2, 2, "Dagger");
 var enemyTroll = new Enemy(" towering and twisted Troll", 1, 2, "Hammer");
 var enemyMan = new Enemy(" very Bad Man", 1, 1, "Sword");
 var enemyMagician = new Enemy(" Magician in black", 1, 2, "Wand")
-var evilFo = new Enemy(" Elf from the wretched bog", 1, 1, "bow")
+var evilFo = new Enemy(" Elf from the wretched bog", 1, 1, "Bow")
 
 function fight() {
 
@@ -145,7 +145,7 @@ function walk() {
 	} else if (walkChoice === 3 || walkChoice === 5) {
 
 		console.log("---------------")
-		//fightRun()
+		fightRun()
 		chooseWeapon()
 		fight()
 		player.numBattles++
@@ -177,33 +177,33 @@ function walk() {
 	}
 }
 
-//function fightRun() {
-//
-//
-//	var chooseFight = ['Fight', 'Run', ]
-//
-//	var fightIndex = readlineSync.keyInSelect(chooseFight, "You realize you are approaching a shady charecter, do you coose to run, or do you choose to fight!?")
-//
-//	if (chooseFight[fightIndex] === "Fight") {
-//
-//		console.log("You've chosen to fight!")
-//
-//	} else {
-//
-//		console.log("---------------")
-//
-//		console.log("You chose to run, you escaped but you feel a bit like a chicken.")
-//		walk()
-//	}
-//
-//}
+function fightRun() {
+
+
+	var chooseFight = ['Fight', 'Run', ]
+
+	var fightIndex = readlineSync.keyInSelect(chooseFight, "You realize you are approaching a shady charecter, do you coose to run, or do you choose to fight!?")
+
+	if (chooseFight[fightIndex] === "Fight") {
+
+		console.log("You've chosen to fight!")
+
+	} else {
+
+		console.log("---------------")
+
+		console.log("You chose to run, you escaped but you feel a bit like a chicken. You will prepare for when you next fight")
+		walk()
+	}
+
+}
 
 
 
 
 function chooseWeapon() {
 
-	var weaponIndex = readlineSync.keyInSelect(player.inventory, " you look into your inventory and prepare for a fight, pick the weapon of your choice? ")
+	var weaponIndex = readlineSync.keyInSelect(player.inventory, "You look into your inventory and prepare for a fight, pick the weapon of your choice? ")
 
 	var chooseWeapon = player.inventory[weaponIndex]
 
@@ -252,15 +252,3 @@ console.log(player.life())
 
 
 
-
-var chooseFight = ['Fight', 'Run', ]
-
-var index = readlineSync.keyInSelect(playerName, "You realize you are approaching a shady charecter, do you coose to run, or do you choose to fight!?")
-
-var doesFight = chooseFight[index]
-
-console.log("---------------")
-
-console.log(player.name + " you are the champion of this adventure! To win you must cross the Diven Forest, and make it out alive. You will fight enemies but you'll have weapons to help. Lets get you on your way! "),
-
-	walk()

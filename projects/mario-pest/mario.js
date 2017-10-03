@@ -3,46 +3,42 @@ var totalCheep = 0;
 var totalBob = 0;
 
 
-document.getElementById("goomba-total").addEventListener("input", function () {
-	var goombaCoins = parseInt(document.getElementById("goomba-price").innerHTML);
-	var goombaTotal = parseInt(document.getElementById("goomba-total").value);
+$("#goomba-total").on("input", function () {
+	var goombaCoins = parseInt($("#goomba-price").html());
+	var goombaTotal = parseInt($("#goomba-total").val());
 	totalGoomba = goombaCoins * goombaTotal;
-	document.getElementById("total-goomba").innerHTML = totalGoomba;
-
+	$("#total-goomba").html(totalGoomba);	
+	
 });
 
-document.getElementById("cheep-total").addEventListener("input", function () {
-	var cheepCoins = parseInt(document.getElementById("cheep-price").innerHTML);
-	var cheepTotal = parseInt(document.getElementById("cheep-total").value);
+$("#cheep-total").on("input", function () {
+	var cheepCoins = parseInt($("#cheep-price").html());
+	var cheepTotal = parseInt($("#cheep-total").val());
 	totalCheep = cheepCoins * cheepTotal;
-	document.getElementById("total-cheep").innerHTML = totalCheep;
+	$("#total-cheep").html(totalCheep) ;
 
 });
 
-document.getElementById("bob-total").addEventListener("input", function () {
-	var bobCoins = parseInt(document.getElementById("bob-price").innerHTML);
-	var bobTotal = parseInt(document.getElementById("bob-total").value);
+$("#bob-total").on("input", function () {
+	var bobCoins = parseInt($("#bob-price").html());
+	var bobTotal = parseInt($("#bob-total").val());
 	totalBob = bobCoins * bobTotal;
-	document.getElementById("total-bob").innerHTML = totalBob;
+	$("#total-bob").html(totalBob) ;
 
 });
 
-document.getElementById("grand-total").addEventListener("click", function(){
-		
-	
-	
-	
+$("#grand-total").on("click", function(){
 	
 	var grandTotal = totalBob + totalCheep + totalGoomba;
-	document.getElementById("total-all").innerHTML = grandTotal;
+	$("#total-all").html(grandTotal) ;
 	
 })
 
 
 
 //
-//document.getElementById("add").addEventListener("click", function(){
-//	var  addA = parseInt(document.getElementById("add-A").value);
+//document.getElementById("add").on("click", function(){
+//	var  addA = parseInt(document.getElementById("add-A").val();
 //	var addB = parseInt(document.getElementById("add-B").value);
 //	var addResult = addA + addB;
 //	document.getElementById("add-result").innerHTML = addResult;
