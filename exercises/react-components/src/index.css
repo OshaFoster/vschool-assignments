@@ -1,6 +1,6 @@
 
 .header {
-  background: url(https://images.unsplash.com/photo-1493246507139-91e8fad9978e?dpr=1&auto=compress,format&fit=crop&w=1350&h=&q=80&cs=tinysrgb&crop=)
+  background: url(https://images.unsplash.com/photo-1494435845424-47a556728b93?dpr=1&auto=compress,format&fit=crop&w=2994&h=&q=80&cs=tinysrgb&crop=)
   no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -8,20 +8,20 @@
   background-size: cover;
   height: 400px;
   text-align: center;
-  color: rebeccapurple;
-  font-size: 30px;
+  color: #5E1CE2;
+  font-size: 40px;
+  font-style: italic;
 }
 
 body {
     background-color: #FEF6E3;
     text-align: center;
-
 }
 
-.div1 {
-    height: auto;
-    width: auto;
+.thisBody{
+    color: #333;
 }
+
 
 .footer {
   position: absolute;
@@ -29,6 +29,31 @@ body {
   bottom: 0;
   left: 0;
   padding: 1rem;
-  background-color: #efefef;
+  background-color: #DFFEF5;
   text-align: center;
+  color:#333;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li  {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li:hover {
+    background-color: #111;
 }

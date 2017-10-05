@@ -2,9 +2,19 @@ import React from "react";
 
 function Body(){
     return (
-        <div className="div1">
-            <h2>This is my Body</h2>
-        
+        <div>
+        <div className="nav">
+            <ul>
+                <li><a className="active" href=""></a>Brushes</li>
+                <li><a href=""></a>Paint</li>
+                <li><a href=""></a>Pencils</li>
+
+            </ul>
+        </div>
+            <div>
+            <h2 className="thisBody">This is my Body</h2>
+
+        </div>
         </div>
     )
 }

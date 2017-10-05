@@ -3,7 +3,7 @@ import React from "react";
 function Footer(){
     return (
         <div className="footer">
-            <h2>This is my Footer</h2><span>here is an address</span>
+            <h2>Create Express</h2><span>visit: artspace@homepage</span>
 
         </div>
     )
