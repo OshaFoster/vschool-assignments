@@ -30,7 +30,9 @@ input {
 }
 
 .div2 {
-	
-	height: 400px;
+	background: rgba(90, 100, 80, 0.3);
+	height: 200px;
 	overflow: scroll;
+	width: 200px
 }
+

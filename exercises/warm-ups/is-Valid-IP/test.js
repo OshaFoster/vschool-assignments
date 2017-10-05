@@ -1,7 +1,7 @@
 var chai = require("chai");
 var assert = chai.assert;
 
-var isValidIp = require "./app.js"
+var isValidIp = require "../app"
 
 describe("check Valid Ip", function () {
 
