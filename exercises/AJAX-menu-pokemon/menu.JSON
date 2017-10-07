@@ -1,67 +1,50 @@
-"menu": [
+ [
 
-	{
-		"appetizers": [
+ 	{
+ 		"appetizers": [
 
-			{
-				"name": "Chips",
-				"price": "4.00"
-				},
+ 			{
+ 				"name": "Chips",
+ 				"price": "4.00"
+ 			},
 
-			{
-				"name": "Salad",
-				"price": "4.00"
-				}
-			]
-		},
+ 			{
+ 				"name": "Salad",
+ 				"price": "4.00"
+ 			}
+ 		]
+ 	},
 
-	{
-		"cold-sandwhiches": [
+ 	{
+ 		"cold-sandwhiches": [
 
-			{
-				"Sandwich": "ham",
-				"Sandwich": "turykey",
-				"Sandwich": "veg"
-				}
-			]
-		},
+ 			{
+ 				"Sandwich": "ham",
+ 				"Sandwich": "turykey",
+ 				"Sandwich": "veg"
+ 			}
+ 		]
+ 	},
 
-	{
-		"hot-sandwiches": [
-			{
+ 	{
+ 		"hot-sandwiches": [{
 
-				"Sandwich": "meatball",
-				"Sandwich": "grilled cheese",
-				"Sandwich": "grilled veg"
-				}
-			]
-		},
+ 			"Sandwich": "meatball",
+ 			"Sandwich": "grilled cheese",
+ 			"Sandwich": "grilled veg"
+ 		}]
+ 	},
 
-	{
-		"deserts": [
+ 	{
+ 		"deserts": [{
 
-			{
-				"pies": [
+ 			"pies": [{
+ 				"cherry": "cherry",
+ 				"cream": "cream"
+ 			}]
 
-					{
-						"cherry",
-						"cream"
-						}
-
-				]
-				},
-
-			]
-				},
+ 		}]
+ 	}
+ ]
 
 
-
-	{
-		"drinks": ["soda", "milk", "juice"],
-
-}
-
-
-]
-
-'{"pets":[{"name":"jack"},{"name":"john"},{"name":"joe"}]}'

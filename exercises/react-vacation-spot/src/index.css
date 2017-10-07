@@ -1,0 +1,23 @@
+.img {
+    height: 300px;
+    width: 100%;
+
+
+}
+
+.card {
+    border: 1px solid black;
+    width: 300px;
+    text-align: center;
+    background-color:#E0F3BA;
+    margin: 20px;
+    color: #2C2B42;
+    font-size: 125%;
+
+}
+
+.parent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}

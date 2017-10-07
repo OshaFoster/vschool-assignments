@@ -6,7 +6,7 @@ import Body from "./Body"
 function App(){
     return(
         <div>
-            <Header/>
+            <Header/>    
             <Body/>
             <Footer/>
         </div>

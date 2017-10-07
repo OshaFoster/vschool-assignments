@@ -1,0 +1,77 @@
+@font-face {
+    font-family: Font;
+    src: url(https://fonts.gstatic.com/s/opensans/v14/EInbV5DfGHOiMmvb1Xr-hhampu5_7CjHW5spxoeN3Vs.woff2);
+}
+@font-face {
+    font-family: thin-font;
+    src: url(https://fonts.gstatic.com/s/lora/v10/_MYF_5lLoOGnzKiQsUc_vevvDin1pK8aKteLpeZ5c0A.woff2);
+}
+
+.header {
+  background: url(http://www.sapiensresearch.org/grupsapiens/img/home-bg.jpg)
+  no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 450px;
+
+}
+
+.nav {
+    overflow: hidden;
+    background-color: 0 0 0 0;
+}
+
+.nav a {
+    float:right;
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    padding:20px 20px;
+    font-family: Font;
+    font-weight: 800;
+    margin-right: 35px;
+}
+
+.bigA {
+    float: left;
+    color: white;
+    padding: 16px 0px 0px 50px;
+    font-size: 20px;
+    font-family: Font;
+}
+
+.title {
+    text-align: center;
+    color: white;
+}
+
+.title h1 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 80px;
+    font-style: bold;
+    font-family: Font;
+
+}
+
+.title h4 {
+    font-size: 30px;
+    margin: 0px;
+    font-family: thin-font sans-serif;
+
+}
+
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: whitesmoke;
+  text-align: center;
+  color:#333;
+}
