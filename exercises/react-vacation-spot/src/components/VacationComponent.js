@@ -1,11 +1,6 @@
 import React from "react";
 
 function VacationComponent(props){
-
-
-
-
-
     return (
         <div className="card">
             <img className="img" src={props.photo} alt=""/>

@@ -4,7 +4,7 @@
 	border: 2px solid gray;
 	margin-left: 80px;
 	margin-top: 60px;
-	width: 80%;
+	width: 200%;
 }
 
 .div1 { 
@@ -33,6 +33,6 @@ input {
 	background: rgba(90, 100, 80, 0.3);
 	height: 200px;
 	overflow: scroll;
-	width: 200px
+	width: 600px
 }
 

@@ -1,0 +1,26 @@
+.photo {
+    height: 300px;
+    width: 300px;
+
+
+}
+
+.div1{
+    display:inline-block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+
+}
+
+.card {
+    margin: 30px;
+    text-align:center;
+    border: 2px solid #2A3934;
+    font-family: 'Kalam', cursive;
+    background-color:#ECF4F1;
+    color:#121A17;
+    
+}

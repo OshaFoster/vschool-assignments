@@ -24,7 +24,7 @@ axios.get("https://api.vschool.io/osha/todo").then(function(response) {
 	
 	for (var i =0; i <response.data.length; i++){
 		
-		list.innerHTML += response.data[i].title  
+		list.innerHTML += "<h1>" + response.data[i].title  + "</h1>"
 		
 		list.innerHTML += "<ul>" + response.data[i].price + "</ul>" 
 			

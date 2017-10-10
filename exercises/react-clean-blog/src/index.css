@@ -6,15 +6,19 @@
     font-family: thin-font;
     src: url(https://fonts.gstatic.com/s/lora/v10/_MYF_5lLoOGnzKiQsUc_vevvDin1pK8aKteLpeZ5c0A.woff2);
 }
-
+body {
+    background-color: whitesmoke;
+}
 .header {
   background: url(http://www.sapiensresearch.org/grupsapiens/img/home-bg.jpg)
-  no-repeat center center fixed;
+  no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   height: 450px;
+  margin-bottom: 80px;
+
 
 }
 
@@ -26,7 +30,7 @@
 .nav a {
     float:right;
     display: block;
-    color: white;
+    color: whitesmoke;
     text-align: center;
     text-decoration: none;
     font-size: 14px;
@@ -38,7 +42,7 @@
 
 .bigA {
     float: left;
-    color: white;
+    color: whitesmoke;
     padding: 16px 0px 0px 50px;
     font-size: 20px;
     font-family: Font;
@@ -46,7 +50,7 @@
 
 .title {
     text-align: center;
-    color: white;
+    color: whitesmoke;
 }
 
 .title h1 {
@@ -60,18 +64,70 @@
 
 .title h4 {
     font-size: 30px;
-    margin: 0px;
-    font-family: thin-font sans-serif;
+    margin: 10px;
+    font-family: 'Open Sans', sans-serif;
 
 }
 
 .footer {
-  position: absolute;
+
   right: 0;
   bottom: 0;
   left: 0;
   padding: 1rem;
   background-color: whitesmoke;
-  text-align: center;
-  color:#333;
+  text-align:center;
+  color:#122D35;
+  margin-top: 80px;
+  height: 150px;
+  border-top:1px solid lightgray;
+}
+.bodyDiv {
+     text-align: left;
+     width: 650px;
+     margin-left: 250px;
+     margin-top: 50px;
+     color:#122D35;
+     border-bottom: 1px solid lightgray;
+     background-color: whitesmoke;
+}
+.bodyDiv h1:hover, .bodyDiv h2:hover {
+  color:  #0085a1;
+}
+
+
+
+.bodyDiv h1 {
+    font-size: 36px;
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    margin:10px;
+    font-style: bold;
+    color: #122D35;
+
+
+}
+
+.bodyDiv p, .bodyDiv h2 {
+    margin: 10;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.bodyDiv span {
+    font-style: italic;
+}
+.bodyDiv span:hover {
+    font-style: italic;
+    color: #0085a1;
+}
+
+.footer span:hover {
+
+    color: #0085a1;
+
+}
+
+.footer span {
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 40px;
 }

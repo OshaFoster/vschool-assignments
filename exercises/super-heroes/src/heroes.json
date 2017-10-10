@@ -1,0 +1,30 @@
+[{
+        "name": "Ang",
+        "element": "Air, Earth, Water, Fire",
+        "phrase": "YaKaPow!!!!",
+        "photo": "https://resizing.flixster.com/luA06fRsTneZ6cFhZD9IlyFQKnw=/2667x3600/v1.bjsxNTIxNzk5O2o7MTc0OTM7MTIwMDsyNjY3OzM2MDA"
+
+    },
+    {
+        "name": "Toph",
+        "element": "Earth",
+        "phrase": "KaBam!!!",
+        "photo": "http://nick-intl.mtvnimages.com/uri/mgid:file:docroot:nick.com:/nicktoons-assets/shows/images/avatar/characters/character_large_332x363_toph.jpg?quality=0.75&height=0&width=480&matte=true&crop=false"
+
+    },
+    {
+        "name": "Kitara",
+        "element": "Water",
+        "phrase": "WaPow!!!",
+        "photo": "https://www.drawingtutorials101.com/drawing-tutorials/Cartoon-TV/Avatar-The-Last-Airbender/katara/how-to-draw-katara-from-avatar-the-last-airbender.jpg"
+
+    },
+
+    {
+        "name": "Sokka",
+        "element": "Sword",
+        "phrase": "SlamPow!!!",
+        "photo": "http://nick-intl.mtvnimages.com/uri/mgid:file:docroot:nick.com:/nicktoons-assets/shows/images/avatar/characters/character_large_332x363_sokka.jpg?quality=0.75&height=0&width=480&matte=true&crop=false"
+
+    }
+]
