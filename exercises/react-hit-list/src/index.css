@@ -1,0 +1,24 @@
+.div1{
+
+    height: 4;
+    width:300px;
+    border: 1px solid black;
+    text-align: center;
+    margin: 20px;
+
+
+}
+
+.photo {
+    height: 300px;
+    width: 300px;
+
+
+}
+
+.parent{
+    display:inline-block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}

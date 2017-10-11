@@ -1,24 +1,43 @@
-var phrase ='slimy smelly solution'
+//var phrase ='slimy smelly solution'
+//
+//var phraseArray = phrase.split('');
+//
+//console.log(phraseArray);
+//
+//
+//
+//var letterCount = {};
+//
+//
+//phraseArray.forEach(function(letter) { letterCount[letter] = (letterCount[letter]||0)+1; });
+//
+//
+//
+//console.log(letterCount);
+//
+//
+//filter func , , , 
 
-var phraseArray = phrase.split('');
-
-console.log(phraseArray);
-
-
-
-var letterCount = {};
-
-
-phraseArray.forEach(function(letter) { letterCount[letter] = (letterCount[letter]||0)+1; });
-
-
-
-console.log(letterCount);
-
-
-filter func , , , 
-
+function returnNcopies(str, n) {
 	
+	if (str.length < 3) {
+		
+		return str.repeat(n) 
+		
+		console.log(str)
+		
+	}else{
+	
+		  return  str.substr(0,4)  
+		console.log(str.repeat(n))
+	}
+		
+}
+
+console.log(returnNcopies("this", 4))
+console.log(returnNcopies("abba", 2))
+
+
 
 //letterCount =p
 //

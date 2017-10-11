@@ -20,7 +20,11 @@
     text-align:center;
     border: 2px solid #2A3934;
     font-family: 'Kalam', cursive;
-    background-color:#ECF4F1;
+    background-color:#EAF4F0;
     color:#121A17;
-    
+
+}
+
+body {
+    background-color:#F9F7EC;
 }

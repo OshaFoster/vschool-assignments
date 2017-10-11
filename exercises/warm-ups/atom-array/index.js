@@ -14,7 +14,7 @@ return  result.every((item) => {
 
 console.log(sameDataType([['a', 'b', 'c'], ["d","d","a",]]))
 
-// 
+//
 // const flattened = arr.reduce((prev, curr) =>{
 //     return prev.concat(curr)
 // },[])
