@@ -10,22 +10,22 @@
 
 
 //
-function wordsWith(arr,char) {
-	
-	var matches = [];
-	
-	for (i = 0; i < arr.length; i ++){
-		if(arr[i].indexOf(char) !== -1)
-			matches.push(arr[i]);
-	}
-	
-	console.log(matches);
-	return matches;
-	
-}
-
-wordsWith(["this", "tht","hug","box"], "h");
-
+//function wordsWith(arr,char) {
+//	
+//	var matches = [];
+//	
+//	for (i = 0; i < arr.length; i ++){
+//		if(arr[i].indexOf(char) !== -1)
+//			matches.push(arr[i]);
+//	}
+//	
+//	console.log(matches);
+//	return matches;
+//	
+//}
+//
+//wordsWith(["this", "tht","hug","box"], "h");
+//
 
 	//loop throus arr
 	//if current word contains letter push to new arr
@@ -34,3 +34,17 @@ wordsWith(["this", "tht","hug","box"], "h");
 //2. Write a function that takes an array of words and a character and return each word that has that letter present
 //
 
+function shapeArea(n) {
+var area = 1;
+    
+    for (var i = 1; i < n; i++){
+        area += 4 * i;
+		
+		console.log(area)
+		
+    }
+        
+    return area;
+}
+
+shapeArea(6)
