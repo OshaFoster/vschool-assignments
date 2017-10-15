@@ -1,6 +1,6 @@
 import React from "react";
 import axios from "axios"
-import TodoCompContainer from "./TodoCompContainer"
+import TodoComponent from "./TodoComponent"
 
 
 class TodoList extends React.Component{
@@ -17,7 +17,6 @@ class TodoList extends React.Component{
         this.handleClick=this.handleClick.bind(this)
         this.postTodo=this.postTodo.bind(this)
         this.handleChange=this.handleChange.bind(this)
-        this.editTodo=this.editTodo.bind(this)
     }
 
 
@@ -30,7 +29,7 @@ componentDidMount() {
     })
 }
 handleClick(id){
-    axios.delete(`https://api.vschool.io/osha/todo/${id}`).then ((response)=>{
+    axios.delete(`https://api.vschool.io/osha/todo${id}`).then ((response)=>{
         this.setState((prevState)=>{
             return({
                 todoList:prevState.todoList.filter((item) =>{
@@ -62,25 +61,6 @@ postTodo(){
 
     })
 }
-editTodo(id) {
-    console.log(id);
-    // console.log(editedTodo);
-    // axios.put(`https://api.vschool.io/osha/todo/${id}`, editedTodo).then (response =>{
-    //     let newEdit = response.data;
-    //     this.setState((prevState) =>{
-    //         const newTodo = prevState.todoList.map((todo)=>{
-    //             if(todo_id === id){
-    //                 return newEdit
-    //             }else{
-    //                 return todoList;
-    //             }
-    //         })
-    //         return {
-    //             todo: newTodo
-    //         }
-    //     })
-    // })
-}
 
 
 
@@ -100,14 +80,14 @@ editTodo(id) {
                     value={this.state.addTodo.description}
                     name="description"
                     onChange={this.handleChange}/>
-            <button onClick={this.postTodo}>add</button>            
+            <button onClick={this.postTodo}>add</button>
+
             {this.state.todoList.map((item, i)=>{
             return (
-                <TodoCompContainer
+                <TodoComponent
                     item={item}
                     key={item.title + i}
-                    delete={this.handleClick}
-                    edit={this.editTodo}/>
+                    delete={this.handleClick}/>
             )
         })}
 

@@ -9,6 +9,43 @@
 //Write a function that takes an array of numbers and returns the largest
 
 
+function almostIncreasingSequence(sequence) {
+    const array = sequence.sort(function(a,b){return a-b})
+   const nextArray = []
+   const failArray =[]
+for (i=0; i<array.length; i++){
+   
+    if(array[i] === array[i+1] + 1 ){
+		
+       nextArray.push(array[i])
+           
+		console.log(nextArray)
+		
+       }else{
+		   failArray.push(array[i])
+	   }
+    }
+    
+    return failArray.length < 1
+}
+
+console.log(almostIncreasingSequence([1,2,3,6]))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //
 //function wordsWith(arr,char) {
 //	
@@ -34,17 +71,17 @@
 //2. Write a function that takes an array of words and a character and return each word that has that letter present
 //
 
-function shapeArea(n) {
-var area = 1;
-    
-    for (var i = 1; i < n; i++){
-        area += 4 * i;
-		
-		console.log(area)
-		
-    }
-        
-    return area;
-}
-
-shapeArea(6)
+//function shapeArea(n) {
+//var area = 1;
+//    
+//    for (var i = 1; i < n; i++){
+//        area += 4 * i;
+//		
+//		console.log(area)
+//		
+//    }
+//        
+//    return area;
+//}
+//
+//shapeArea(6)
