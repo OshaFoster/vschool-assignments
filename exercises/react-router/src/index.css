@@ -1,0 +1,39 @@
+.app-wrapper {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+}
+body {
+    background-color: #F7F5F9;
+}
+
+.nav {
+    width: 40%;
+    display: flex;
+    margin:auto;
+    justify-content: space-between;
+}
+
+.header {
+    background: url("https://images.unsplash.com/photo-1478145046317-39f10e56b5e9?dpr=1&auto=format&fit=crop&w=2734&h=&q=60&cs=tinysrgb&crop=") no-repeat;
+    background-size: cover;
+    height: 300px;
+    width:100%;
+    background-position: 10% 45%;
+}
+
+.divHead {
+    height: 350px;
+    overflow: hidden;
+}
+.footer {
+    background: url("https://images.unsplash.com/photo-1478145046317-39f10e56b5e9?dpr=1&auto=format&fit=crop&w=2734&h=&q=60&cs=tinysrgb&crop=") no-repeat;
+    background-size: cover;
+    height: 100px;
+    width:100%;
+    background-position: 10% 85%;
+    align-self: flex-end;
+}

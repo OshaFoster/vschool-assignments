@@ -62,31 +62,29 @@ postTodo(){
 
     })
 }
-editTodo(id) {
-    console.log(id);
-    // console.log(editedTodo);
-    // axios.put(`https://api.vschool.io/osha/todo/${id}`, editedTodo).then (response =>{
-    //     let newEdit = response.data;
-    //     this.setState((prevState) =>{
-    //         const newTodo = prevState.todoList.map((todo)=>{
-    //             if(todo_id === id){
-    //                 return newEdit
-    //             }else{
-    //                 return todoList;
-    //             }
-    //         })
-    //         return {
-    //             todo: newTodo
-    //         }
-    //     })
-    // })
+editTodo(id, editedTodo) {
+    axios.put(`https://api.vschool.io/osha/todo/${id}`, editedTodo).then (response =>{
+        let newEdit = response.data;
+        this.setState((prevState) =>{
+            const newTodo = prevState.todoList.map((todo)=>{
+                if(todo._id === id){
+                    return newEdit
+                }else{
+                    return todo;
+                }
+            })
+            return {
+                todoList: newTodo
+            }
+        })
+    })
 }
 
 
 
 
     render(){
-        return( <div>
+        return( <div className="div2">
 
                 <input
                 type="text"
@@ -100,7 +98,7 @@ editTodo(id) {
                     value={this.state.addTodo.description}
                     name="description"
                     onChange={this.handleChange}/>
-            <button onClick={this.postTodo}>add</button>            
+            <button onClick={this.postTodo}>add</button>
             {this.state.todoList.map((item, i)=>{
             return (
                 <TodoCompContainer

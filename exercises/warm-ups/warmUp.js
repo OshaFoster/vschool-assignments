@@ -8,34 +8,43 @@
 
 //Write a function that takes an array of numbers and returns the largest
 
+//
+//function almostIncreasingSequence(sequence) {
+//    const array = sequence.sort(function(a,b){return a-b})
+//   const nextArray = []
+//   const failArray =[]
+//for (i=0; i<array.length; i++){
+//   
+//    if(array[i] === array[i+1] + 1 ){
+//		
+//       nextArray.push(array[i])
+//           
+//		console.log(nextArray)
+//		
+//       }else{
+//		   failArray.push(array[i])
+//	   }
+//    }
+//    
+//    return failArray.length < 1
+//}
+//
+//console.log(almostIncreasingSequence([1,2,3,6]))
+const array = ["this","is", "my","array"]
+function every(arr, func){
+	
 
-function almostIncreasingSequence(sequence) {
-    const array = sequence.sort(function(a,b){return a-b})
-   const nextArray = []
-   const failArray =[]
-for (i=0; i<array.length; i++){
-   
-    if(array[i] === array[i+1] + 1 ){
+ 	for (let i=0; i < arr.length; i++){
 		
-       nextArray.push(array[i])
-           
-		console.log(nextArray)
+	}
+	
 		
-       }else{
-		   failArray.push(array[i])
-	   }
-    }
-    
-    return failArray.length < 1
+}
+	
+	
 }
 
-console.log(almostIncreasingSequence([1,2,3,6]))
-
-
-
-
-
-
+console.log(every())
 
 
 

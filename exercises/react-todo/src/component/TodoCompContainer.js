@@ -31,7 +31,8 @@ handleEdit(event){
                 item={this.props.item}
                 delete={this.props.delete}
                 editedTodo={this.state.editTodo}
-                edit={this.props.edit}/>
+                edit={this.props.edit}
+                handleEdit={this.handleEdit}/>
 
 
 
