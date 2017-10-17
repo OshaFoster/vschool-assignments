@@ -4,9 +4,9 @@ import {Switch, Route} from "react-router-dom";
 import Home from "./views/Home"
 import About from "./views/About"
 import Contact from "./views/Contact"
-import Services from "./views/Services"
 import Header from "./Header"
 import Footer from "./Footer"
+import ServicesContainer from  "./views/services/Container"
 
 
 class App extends React.Component{
@@ -21,7 +21,7 @@ class App extends React.Component{
                 <Route exact path="/" component={Home}/>
                 <Route exact path="/about" component={About}/>
                 <Route exact path="/contact" component={Contact}/>
-                <Route exact path="/services" component={Services}/>
+            <Route exact path="/services" component={ServicesContainer}/>
 
             </Switch>
             <Footer/>

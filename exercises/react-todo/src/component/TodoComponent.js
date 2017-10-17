@@ -3,6 +3,7 @@ import React from "react"
 
 function TodoComponent(props){
     return (
+        <div className="parent">
     <div className="div1">
         <h2>{props.item.title}</h2>
         <h4>{props.item.description}</h4>
@@ -18,7 +19,8 @@ function TodoComponent(props){
         value={props.editedTodo.description}
         name="description"
         onChange={props.handleEdit}/>
-        
+
+    </div>
     </div>
 
     )

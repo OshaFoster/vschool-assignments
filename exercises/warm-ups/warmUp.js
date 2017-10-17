@@ -30,26 +30,63 @@
 //}
 //
 //console.log(almostIncreasingSequence([1,2,3,6]))
-const array = ["this","is", "my","array"]
-function every(arr, func){
-	
+//const array = ["this","is", "my","array"]
+//function every(arr, func){
+//	
+//
+// 	for (let i=0; i < arr.length; i++){
+//		
+//	}
+//	
+//		
+//}
+//	
+//	
+//}
+//
+//console.log(every())
 
- 	for (let i=0; i < arr.length; i++){
-		
+//function divisibleThree(num){
+//	
+//	numDivisible = 0
+//	//while(num > 1){
+//	if (num % 3 === 0){
+//		
+//	numDivisible++
+//		num = num/3
+//		console.log(num)
+//	}else if ((num +1) % 3===0){
+//		num = (num + 1)/3
+//		numDivisible++
+//		consoloe.log(num)
+//	}else if((num-1) % 3===0){
+//		num =(num -1)/3
+//		numDivisible++
+//	}
+//		
+//	//}
+//	
+//	return numDivisible
+//	
+//}
+//
+//console.log(divisibleThree(6))
+
+
+function gameOf3(num, count === 0){
+	if(num === 1) return count;
+	if(num % 3 === 0){
+		count++
+		return gameOf3(num/3, count);
+	}else if((num -1) % 3 === 0){
+		return gameOf3((num-1)/3, count)
+	}else{
+		return gameOf3(num+1/3, count)
 	}
-	
-		
-}
-	
-	
 }
 
-console.log(every())
 
-
-
-
-
+console.log(gameOf3(9))
 
 
 
