@@ -6,6 +6,7 @@ function Service(props){
     return(
         <div >
             <h3>{serviceInfo.title}</h3>
+        <h4>{`Price: $${serviceInfo.price}`}</h4>
 
         </div>
     )

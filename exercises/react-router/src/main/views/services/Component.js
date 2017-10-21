@@ -26,9 +26,9 @@ function ServicesComponent(props){
                     }}/>
              </Switch>
 
-             <Switch>
+             {/* <Switch>
                  <Route path="/service/:id" component={Service}/>
-              </Switch>
+              </Switch> */}
         </div>
         </div>
     )

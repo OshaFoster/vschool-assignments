@@ -72,24 +72,54 @@
 //
 //console.log(divisibleThree(6))
 
+//function linkedList(n){
+//	if(n === 0) return {
+//		next: null,
+//		value: 0
+//		
+//	}
+//	return {
+//		next: linkedList(n-1),
+//		value: n
+//	}
+//		
+//}
+//
+//console.log(linkedList(0))
 
-function gameOf3(num, count === 0){
-	if(num === 1) return count;
-	if(num % 3 === 0){
-		count++
-		return gameOf3(num/3, count);
-	}else if((num -1) % 3 === 0){
-		return gameOf3((num-1)/3, count)
-	}else{
-		return gameOf3(num+1/3, count)
-	}
-}
+var twoSum = function(nums, target) {
+   const targetArray = []
+    for (let i = 0; i <nums.length; i++){
+	
+        if ((nums[i] + nums [i+1]) === target){
+        return targetArray.push(i, (i+1))
+        }
+    }
+    
+};
+
+console.log(twoSum())
 
 
-console.log(gameOf3(9))
 
 
-
+//function gameOf3(num, count === 0){
+//	if(num === 1) return count;
+//	if(num % 3 === 0){
+//		count++
+//		return gameOf3(num/3, count);
+//	}else if((num -1) % 3 === 0){
+//		return gameOf3((num-1)/3, count)
+//	}else{
+//		return gameOf3(num+1/3, count)
+//	}
+//}
+//
+//
+//console.log(gameOf3(9))
+//
+//
+//
 
 
 //
