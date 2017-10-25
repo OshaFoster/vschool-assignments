@@ -16,6 +16,7 @@ function Country(props){
         <div style={style}>
             <h4>{props.country.name}</h4>
         <button onClick={()=>{props.deleteCountry(props.index)}}>Remove</button>
+    
         </div>
     )
 }

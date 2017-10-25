@@ -15,6 +15,8 @@ class FormContainer extends React.Component {
 
             }
         }
+        this.handleChange= this.handleChange.bind(this)
+        this.handleSubmit=this.handleSubmit.bind(this)
     }
 
     handleChange(e){
@@ -30,7 +32,7 @@ class FormContainer extends React.Component {
     }
 
     handleSubmit(e){
-        e.prevDefault();
+        e.preventDefault();
         this.props.addMeme(this.state.inputs)
         this.setState({
             inputs:{

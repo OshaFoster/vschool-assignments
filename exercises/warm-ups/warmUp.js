@@ -87,21 +87,27 @@
 //
 //console.log(linkedList(0))
 
-var twoSum = function(nums, target) {
-   const targetArray = []
-    for (let i = 0; i <nums.length; i++){
+//var twoSum = function(nums, target) {
+//   const targetArray = []
+//    for (let i = 0; i <nums.length; i++){
+//	
+//        if ((nums[i] + nums [i+1]) === target){
+//        return targetArray.push(i, (i+1))
+//        }
+//    }
+//    
+//};
+//
+//console.log(twoSum())
+
+function daysAgo(n){
+	let today = new Date();
+	today.setDate(today.getDate()-n)
+	console.log(today.toDateString());
 	
-        if ((nums[i] + nums [i+1]) === target){
-        return targetArray.push(i, (i+1))
-        }
-    }
-    
-};
+}
 
-console.log(twoSum())
-
-
-
+daysAgo(100)
 
 //function gameOf3(num, count === 0){
 //	if(num === 1) return count;
