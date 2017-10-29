@@ -7,7 +7,7 @@ export const memes ={
     deleteMeme
 }
 
-//imoprt {loadTodos} from "./todos"
+//import {loadTodos} from "./todos"
 
 
 //addTodo
