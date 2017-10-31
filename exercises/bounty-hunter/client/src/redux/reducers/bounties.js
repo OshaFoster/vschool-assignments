@@ -4,7 +4,7 @@ const bounties = function(prevBounty =[], action){
 
         case "DELETE_BOUNTY":
         newBounty = newBounty.filter((bount)=>{
-            return id!==bount.id
+            return action.id!==bount.id
         })
         case "LOAD_BOUNTY":
         return action.bounties

@@ -4,19 +4,21 @@ import React from "react"
 //connect list and map
 
 class TodoList extends React.Component{
-    constructor(){
-        super();
+    // constructor(){
+    //     super();
+
+
 
     }
 
-    render(){
+    render( {
         return(
             <div>
             <h3>Title</h3>
             <h3>Description</h3>
                     </div>
         )
-    }
+    })
 }
 
 export default TodoList

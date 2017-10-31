@@ -4,9 +4,9 @@
 // let reducer = combineReducers({todos})
 //
 // export default reducer;
-const state ={
-
-    todos:[]
-    
-    }
-}
+// const state ={
+//
+//     todos:[]
+//
+//     }
+// }

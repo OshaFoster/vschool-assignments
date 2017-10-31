@@ -10,5 +10,6 @@ function FormComponent(){
     </div>
 
 }
-}
+
+
 //inputs and button

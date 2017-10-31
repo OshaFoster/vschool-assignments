@@ -19,8 +19,9 @@ export function addBounty(newBounty){
     return(dispatch)=>{
         axios.post(bountyUrl, newBounty).then((response) => {
             dispatch({
-            type:"ADD_TODO",
-            newTodo
+            type:"ADD_BOUNTY",
+            
+
         })
     })
     }
