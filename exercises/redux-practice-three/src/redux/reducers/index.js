@@ -12,6 +12,8 @@ export default function reducer(prevstate = state, action){
                 todos: action.list
             }
         }
+        default:
+        return prevstate
     }
 
 }

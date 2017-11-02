@@ -6,7 +6,7 @@ const state={
 
 const reducer = function(prevState = state, action){
     return {
-        memes : memes(prevState.countries, action)
+        memes : memes(prevState.memes, action)
     }
 }
 
