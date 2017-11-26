@@ -7,20 +7,9 @@
     src: url(https://fonts.gstatic.com/s/lora/v10/_MYF_5lLoOGnzKiQsUc_vevvDin1pK8aKteLpeZ5c0A.woff2);
 }
 body {
-    background-color: whitesmoke;
+    background: url(https://images.unsplash.com/photo-1452251889946-8ff5ea7b27ab?auto=format&fit=crop&w=2524&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D) no-repeat;
 }
-.header {
-  background: url(http://www.sapiensresearch.org/grupsapiens/img/home-bg.jpg)
-  no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height: 450px;
-  margin-bottom: 80px;
 
-
-}
 
 .nav {
     overflow: hidden;
@@ -75,7 +64,8 @@ body {
   bottom: 0;
   left: 0;
   padding: 1rem;
-  background-color: whitesmoke;
+  background-color: #;
+  opacity:0.5;
   text-align:center;
   color:#122D35;
   margin-top: 80px;
@@ -90,6 +80,7 @@ body {
      color:#122D35;
      border-bottom: 1px solid lightgray;
      background-color: whitesmoke;
+     opacity:0.5;
 }
 .bodyDiv h1:hover, .bodyDiv h2:hover {
   color:  #0085a1;
@@ -103,8 +94,6 @@ body {
     margin:10px;
     font-style: bold;
     color: #122D35;
-
-
 }
 
 .bodyDiv p, .bodyDiv h2 {

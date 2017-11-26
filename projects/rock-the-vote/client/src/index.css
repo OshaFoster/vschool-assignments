@@ -1,0 +1,25 @@
+.header {
+    background: url("https://images.unsplash.com/photo-1494172892981-ce47ca685eea?auto=format&fit=crop&w=1651&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D") no-repeat;
+    background-size: cover;
+    height: 400px;
+    width:100%;
+    background-position: 30% 60%;
+    color:#F6A61D;
+}
+body {
+    background-color:
+}
+
+.addIssue {
+    height: 200px;
+    width: 80%;
+    border: 1px solid black;
+
+}
+
+.issuesList {
+    height: 400px;
+    width: 80%;
+    border: 1px solid black;
+
+}

@@ -29,7 +29,7 @@ class ServicesContainer extends React.Component{
     }
     searchById(id){
         return this.state.services.filter((service)=>{
-            return id===service._id;
+            return id === service._id;
         })[0]
     }
     genLinks(){

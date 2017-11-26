@@ -24,6 +24,7 @@ class TodoList extends React.Component{
 componentDidMount() {
     axios.get("https://api.vschool.io/osha/todo").then ((response)=> {
         this.setState({
+            
             todoList:response.data.reverse()
         })
 

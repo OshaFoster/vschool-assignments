@@ -18,7 +18,7 @@ class FormContainer extends React.Component{
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
-  
+
   handleChange(event){
     event.persist()
     this.setState((prevState)=>{
@@ -30,7 +30,7 @@ class FormContainer extends React.Component{
       }
     })
   }
-  
+
   handleSubmit(event){
     event.preventDefault();
     this.props.addBounty(this.state.inputs);
@@ -44,7 +44,7 @@ class FormContainer extends React.Component{
       }
     })
   }
-  
+
   render(){
     return(
       <FormComponent handleChange={this.handleChange}
@@ -53,4 +53,4 @@ class FormContainer extends React.Component{
     )
   }
 }
-export default connect(null, bounties) (FormContainer);
+export default connect(null, bounties)(FormContainer);

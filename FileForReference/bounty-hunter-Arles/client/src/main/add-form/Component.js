@@ -9,7 +9,7 @@ function FormComponent(props){
                 <label>Living</label><input onChange={props.handleChange} value={props.newItem.living} name="living"type="text"/>
                 <label>Bounty $</label><input onChange={props.handleChange} value={props.newItem.bounty} name="bounty"type="number"/>
                 <label>Type</label><input onChange={props.handleChange} value={props.newItem.type} name="type"type="text"/>
-                <button>+</button>
+            <button>+</button>
           </form>
     </div>
   )
