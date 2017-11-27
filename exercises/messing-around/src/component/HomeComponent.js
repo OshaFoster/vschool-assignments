@@ -6,7 +6,7 @@ function HomeComponent(){
         <div className="home">
             <div className="box1">
                 <div className="photo">
-
+                    <img src="../../images/portrait.jpg" alt="profile"/>
                 </div>
             </div>
             Hello World
