@@ -13,7 +13,6 @@ border: 2px solid gray;
     font-size: 40px;
     font-family: 'Cormorant Garamond', serif;
     color: #38185B;
-    text-shadow: 0px 2px 0px white;
     border-bottom: 1px solid brown;
     border-top: 1px solid brown;
     margin-bottom: 20px;
@@ -28,19 +27,19 @@ border: 2px solid gray;
     color: white;
     font-family: 'Playfair Display', serif;
     text-decoration: none;
-    text-shadow: 0px 1px 0px purple;
+    text-shadow: 1px 1px 0px black;
     transform: skew(-14deg);
     border-bottom: solid 1px purple;
 }
-
-.linkTo:hover {
+/*
+/*.linkTo:hover {
     transform: skew(0deg);
     -moz-transition: all 1s linear;
     -o-transition: all 1s linear;
     transition: all 1s linear;
-    background-color: rgba(140,140,250, 0.3);
+    /*background-color: rgba(140,140,250, 0.3);*/
 
-}
+
 .home {
 background: url(https://images.unsplash.com/photo-1484553255294-313b931acd27?auto=format&fit=crop&w=2852&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D) no-repeat center center fixed;
 background-size: cover;
@@ -54,16 +53,15 @@ padding-left: 80px;
     height: 250px;
     width: 500px;
     border: 1px solid gray;
-    background-color: rgba(140,140,250, 0.3);
-    opacity: .8;
     position: fixed;
 }
 
 .photo {
-    height: 180px;
-    width: au;
+    height: 100%;
+    width: 100%;
     border: 1px solid gray;
-    /*background: url("/images/portrait.jpg");*/
+    background: url("./images/DSC01613.jpg")no-repeat center center fixed;
+    background-size: cover;
     margin-left: 30px;
     margin-top:  30px;
 }
