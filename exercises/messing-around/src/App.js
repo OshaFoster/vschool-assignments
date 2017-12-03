@@ -1,7 +1,8 @@
 import React from "react";
-import HomeComponent from "./component/HomeComponent"
+import InfoComponent from "./component/InfoComponent"
 import MainPage from "./component/MainPage"
-import {Switch, Route} from "react-router-dom"
+import Footer from "./component/Footer"
+// import {Switch, Route} from "react-router-dom"
 
 
 function App() {
@@ -9,10 +10,13 @@ function App() {
 
         <div>
 
-            <Switch>
-                <Route exact path="/" component={HomeComponent}/>
+        <MainPage/>
+        <InfoComponent/>
+        <Footer/>
+            {/* <Switch>
+                <Route exact path="/" component={InfoComponent}/>
                 <Route path="/main" component={MainPage}/>
-            </Switch>
+            </Switch> */}
         </div>
         )
 }

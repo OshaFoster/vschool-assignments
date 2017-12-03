@@ -1,67 +1,219 @@
 .main {
-background: url(https://images.unsplash.com/photo-1484553255294-313b931acd27?auto=format&fit=crop&w=2852&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D) no-repeat center center fixed;
+background: url(https://images.unsplash.com/photo-1501236570302-906143a7c9f8?auto=format&fit=crop&w=2534&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D) no-repeat;
 background-size: cover;
-height:100vh;
+height:400px;
+width: auto;
 padding-top: 200px;
 overflow: hidden;
-border: 2px solid gray;
+border: 2px solid white;
+position: static;
+padding: 20px;
+
 }
+
 
 .title {
     text-align: center;
-    margin-left: 180px;
-    font-size: 40px;
-    font-family: 'Cormorant Garamond', serif;
-    color: #38185B;
-    border-bottom: 1px solid brown;
-    border-top: 1px solid brown;
+    margin-left: 140px;
+    margin-top: 120px;
+    font-size: 30px;
+    font-family: 'Satisfy', cursive;
+    color: #F9AF30;
+    border-bottom: 2px solid #569ABC;
+    border-top: 2px solid #F9F4E6;
     margin-bottom: 20px;
+    text-shadow: 1px 1px 0px purple;
 
 }
 .linkTo {
     text-align: center;
     margin-left: 280px;
     padding-bottom: 30px;
-    font-size: 30px;
-    width:800px;
+    font-size: 24px;
+    width:700px;
     color: white;
     font-family: 'Playfair Display', serif;
     text-decoration: none;
     text-shadow: 1px 1px 0px black;
-    transform: skew(-14deg);
+    transform: skew(-10deg);
     border-bottom: solid 1px purple;
 }
-/*
 /*.linkTo:hover {
     transform: skew(0deg);
-    -moz-transition: all 1s linear;
-    -o-transition: all 1s linear;
-    transition: all 1s linear;
-    /*background-color: rgba(140,140,250, 0.3);*/
+    transition-timing-function: ease-in-out;
+    background-color: rgba(140,140,250, 0.4);
+}*/
+span {
+    font-size: 30px;
+    font-family: 'Satisfy', cursive;
+    color: #F9AF30;
 
-
+}
 .home {
-background: url(https://images.unsplash.com/photo-1484553255294-313b931acd27?auto=format&fit=crop&w=2852&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D) no-repeat center center fixed;
+background: url(https://images.unsplash.com/photo-1478109562701-8d261b58b09d?auto=format&fit=crop&w=1650&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D) no-repeat center center fixed;
 background-size: cover;
 height: 100vh;
-padding-top: 80px;
+width: auto;
+padding-top: 40px;
 padding-left: 80px;
+position: static;
+
 
 }
 
-.box1 {
-    height: 250px;
-    width: 500px;
-    border: 1px solid gray;
-    position: fixed;
+.photoBox {
+    height: 200px;
+    width: 160px;
+    display: inline-block;
+    position: relative;
+
 }
 
 .photo {
     height: 100%;
     width: 100%;
-    border: 1px solid gray;
-    background: url("./images/DSC01613.jpg")no-repeat center center fixed;
+    background: url("./images/portrait.jpg")no-repeat center;
     background-size: cover;
+    margin-left: 20px;
+    margin-top:35px;
+    border: 1px solid purple;
+
+}
+
+.box1 {
+    width: 35%;
+    height: 280px;
+    /*border: 1px solid white;*/
+    position: absolute;
+    z-index: 4;
+    /*background: url(https://images.unsplash.com/photo-1503453363464-743ee9ce1584?auto=format&fit=crop&w=1652&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D) no-repeat center center fixed;*/
+    background-size: cover;
+    /*box-shadow: 5px 5px 5px gray;*/
+    background-color:#F8F4FF;
+}
+
+.about {
+    color: gray;
+    display: inline-block;
+    width: 130px;
+    height: 50px;
+    margin-left: 60px;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 18px;
+}
+
+.box3:hover {
+    z-index: 10;
+}
+
+.box2:hover {
+    z-index: 10;
+}
+
+.box2 {
+    width: 45%;
+    height: 350px;
+    /*border: 1px solid #E31F4D;*/
+    margin-left: 500px;
+    z-index: 2;
+    position:absolute;
+    /*background: url(https://images.unsplash.com/photo-1478109562701-8d261b58b09d?auto=format&fit=crop&w=1650&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D) no-repeat center center fixed;*/
+    background-size: cover;
+    /*box-shadow: 3px 3px 4px gray;*/
+    background-color: rgba(30, 0, 20, 0.3);
+}
+.fairylandImage {
+    height: 75px;
+    width: 110px;
+    margin:25px;
+    /*box-shadow: 1px 2px 1px gray;*/
+}
+.fairylandImage:hover{
+    height: 100px;
+    width: 110px;
+    /*background: url("./images/fairylandHome.jpg");*/
+    background-size: cover;
+    transform: scale(4);
+    transition: all .2s linear;
+    border: 0px;
+}
+.box3 {
+    width: 38%;
+    height: 300px;
+    border: 1px solid purple;
+    margin-left: 300px;
+    margin-top: 320px;
+    position: relative;
+    z-index: 3;
+    background: url(https://images.unsplash.com/photo-1478109562701-8d261b58b09d?auto=format&fit=crop&w=1650&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D) no-repeat center center fixed;
+    background-size: cover;
+    /*box-shadow: 2px 2px 2px purple;*/
+    /*overflow: hidden;*/
+    padding: 20px;
+
+}
+
+.resumeDiv {
+    width: 200px;
+    height: 260px;
+    margin: 20px;
+    /*background-color: rgba(140,140,150, 0.4);*/
+    display: inline-block;
+
+}
+.resume{
+    height: 100%;
+    width: 100%;
+    background: url("./images/resume.jpg")no-repeat center;
+    background-size: cover;
+    border: 1px solid gray;
+    /*box-shadow: 1px 2px 2px purple;*/
+    display: inline-block;
+
+}
+.resume:hover{
+    padding-bottom: 35px;
+    height: 110px;
+    width: 110px;
+    background: url("./images/resume.jpg");
+    background-size: cover;
+    transform: scale(5);
+    transition: all .2s linear;
+    border: 0px;
+    /*box-shadow: 0px 2px 1px gray;*/
+    z-index: 10;
+}
+
+.resumeDiv:hover {
+    margin-top:0px;
+    padding-bottom: 20px;
+}
+
+.resumeButtonDiv {
+    height: 60px;
+    position: absolute;
+    display: inline-block;
+    margin-top: 30px;
     margin-left: 30px;
-    margin-top:  30px;
+}
+
+.link {
+    height: 40px;
+    width: 120px;
+    font-size: 22px;
+    color:  #E08729;
+    background-color: #F8F4FF;
+    /*box-shadow: 2px 2px 2px purple;*/
+    border-radius: 15px;
+    font-family: 'Playfair Display', serif;
+}
+
+
+.footer {
+    height: 60px;
+    width: auto;
+    background: url(https://images.unsplash.com/photo-1501236570302-906143a7c9f8?auto=format&fit=crop&w=2534&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D) no-repeat;
+
 }
