@@ -1,16 +1,16 @@
 const express = require("express");
 const issueRoutes = express.Router();
-const Issues = require("../models/issues")
+const Issue = require("../models/issues")
 
 issueRoutes.get("/", (req, res)=>{
-    Issues.find(req.query, (err, issues)=>{
+    Issue.find(req.query, (err, issues)=>{
         if (err) return res.status(500).send(err)
-        return res.send(issues)
+        return res.send(allIssues)
     })
 })
 
 issueRoutes.post("/", (req, res)=>{
-    let newIssue = new Issues(req.body);
+    let newIssue = new Issue(req.body);
     newIssue.save((err, savedIssue)=>{
         if (err) return res.status(500).send(err)
         return res.send(savedIssue);
@@ -18,14 +18,14 @@ issueRoutes.post("/", (req, res)=>{
 })
 
 issueRoutes.delete("/:id", (req, res)=>{
-    Issues.findByIdAndRemove(req.params.id, (err, deletedIssue)=>{
+    Issue.findByIdAndRemove(req.params.id, (err, deletedIssue)=>{
         if(err) return res.status(500).send(err)
         return res.send(deletedIssue)
     })
 })
 
 issueRoutes.get("/:id", (req, res)=>{
-    Issues.findById(req.params.id, (err, foundIssue)=>{
+    Issue.findById(req.params.id, (err, foundIssue)=>{
         if(err)return res.status(500).send(err)
         return res.send(foundIssue)
     })
@@ -33,7 +33,7 @@ issueRoutes.get("/:id", (req, res)=>{
 })
 
 issueRoutes.put("/:id", (req, res)=>{
-    Issues.findByIdAndUpdate(req.params.id, req.body, {new:true}, (err, foundIssue)=>{
+    Issue.findByIdAndUpdate(req.params.id, req.body, {new:true}, (err, foundIssue)=>{
         if(err) return res.status(500).send(err)
         return res.send(foundIssue)
     })
