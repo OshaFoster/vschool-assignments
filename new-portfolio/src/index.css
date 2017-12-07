@@ -1,0 +1,235 @@
+.header {
+    background: url(https://images.unsplash.com/photo-1470290565452-494169ca14be?auto=format&fit=crop&w=1650&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D) no-repeat;
+    background-size: cover;
+    background-position: 0% 5%;
+    height:380px;
+    width: auto;
+    border-top: 1px solid gray;
+}
+
+.name {
+    height: 280px;
+    padding-top: 20px;
+    font-size: 3em;
+    margin-left: 110px;
+    font-family: 'Bad Script', cursive;
+    color: #F9F8F6;
+    text-shadow: 1px 1px 1px #FFB229;
+}
+
+@media (max-width: 599px) {
+  .name  {
+      margin-left: 10px;
+      padding-top: 0px;
+      font-size: 2em;
+
+  }
+}
+@media screen and (max-width: 900px) and (min-width: 600px) {
+  .name {
+      margin-left: 30px;
+      padding-top: 30px;
+      font-size: 2em;
+   }
+}
+
+.icons {
+    color: #FFB229;
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #F9F6E8;
+    border-bottom: 1px solid gray;
+}
+
+.dev {
+    color: #443720;
+}
+
+.icons:hover {
+    color:blue;
+    transition-property: all;
+	transition-duration: 1s;
+}
+
+span {
+    padding-right: 30px;
+    padding-top: 10px;
+    font-size: 30px;
+    font-family: 'Amatic SC', cursive;
+
+}
+
+.parent {
+    height: 800px;
+    background-color: #F9F8F6;
+
+    /*border-top: 1px solid gray;*/
+}
+
+.about {
+    height: 400px;
+    width: 100%;
+    background-color: #F7FDF9;
+    margin-top: 25px;
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
+    font-size: 18px;
+    color: #443720;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 20px;
+
+}
+p {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    color: #443720;
+}
+.projectsTitle {
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
+    font-size: 30px;
+    color: #443720;
+
+}
+.projectDiv {
+    height: 300px;
+    width: 100%;
+    margin-right: 30px;
+    background-color: #E7EDE9;
+    margin-top: 5px;
+
+    /*border-bottom: 1px solid gray;*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    padding-top: 30px;
+}
+
+.fairyland {
+    height: 280px;
+    width: 47%;
+    background-color: #F7FDF9;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 10px;
+}
+.imageDiv {
+    height:65%;
+    width:70%;
+    padding-top: 30px;
+
+}
+@media (min-width: 1130px) {
+  .imageDiv {
+      height:220px;
+      width:340px;
+      padding-top: 30px;
+   }
+  .projectTitleDiv {
+      margin-top: 100px;
+      margin-left: 30px;
+  }
+  .about {
+      padding: 60px;
+  }
+}
+
+.fairylandImage{
+    height:100%;
+    width:100%;
+
+}
+
+
+.recipeBox {
+    height: 280px;
+    width: 47%;
+    background-color: #F7FDF9;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 10px;
+}
+.recipeBoxImage {
+    height:100%;
+    width:100%;
+}
+.projectTitle {
+    font-family: 'Amatic SC', cursive;
+    font-size: 28px;
+    color: #443720;
+    border-bottom: 1px solid gray;
+    padding: 3px;
+    margin-top: 10px;
+}
+.projectTitle:hover {
+    color: blue;
+}
+
+@media (max-width: 599px) {
+  .recipeBox {
+     width: 100%;
+     margin: 10px;
+  }
+  .fairyland {
+      width: 100%;
+      margin: 10px;
+  }
+  .projectDiv {
+      height: 600px;
+  }
+  .parent {
+      height: 1100px;
+  }
+  span {
+      padding-right: 5px;
+  }
+}
+@media screen and (max-width: 900px) and (min-width: 600px) {
+  .name {
+      margin-left: 30px;
+      padding-top: 30px;
+      font-size: 2em;
+   }
+}
+
+.footer {
+    background: url("https://images.unsplash.com/photo-1470290565452-494169ca14be?auto=format&fit=crop&w=1650&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D") no-repeat;
+    background-size: cover;
+    height: 100px;
+    width:100%;
+    background-position: 0% 98%;
+    align-self: flex-end;
+    border-top: 1px solid gray;
+}
+.infoDiv {
+    color: #FFB229;
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #F9F6E8;
+}
+.resume {
+    font-size: 26px;
+    border: 1px solid #FFB229;
+    height: 30px;
+    margin-top: 10px;
+    padding: 5px;
+    margin-right: 20px;
+    color: #443720;
+}
+.resumeLink {
+    text-decoration: none;
+    margin-top: 12px;
+}
+.resume:hover {
+    color:blue;
+
+}
+
+.link {
+    text-decoration: none;
+}
