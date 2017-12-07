@@ -115,14 +115,14 @@ position: static;
 .box2 {
     width: 45%;
     height: 350px;
-    /*border: 1px solid #E31F4D;*/
+    border: 1px solid #E31F4D;
     margin-left: 500px;
     z-index: 2;
     position:absolute;
     /*background: url(https://images.unsplash.com/photo-1478109562701-8d261b58b09d?auto=format&fit=crop&w=1650&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D) no-repeat center center fixed;*/
     background-size: cover;
     /*box-shadow: 3px 3px 4px gray;*/
-    background-color: rgba(30, 0, 20, 0.3);
+    background-color: rgba(30, 0, 220, 0.3);
 }
 .fairylandImage {
     height: 75px;
