@@ -14,7 +14,7 @@
     margin-left: 110px;
     font-family: 'Bad Script', cursive;
     color: #F9F8F6;
-    text-shadow: 1px 1px 1px #FFB229;
+
 }
 
 @media (max-width: 599px) {
@@ -31,6 +31,7 @@
       padding-top: 30px;
       font-size: 2em;
    }
+
 }
 
 .icons {
@@ -44,6 +45,7 @@
 
 .dev {
     color: #443720;
+    font-size: 30px;
 }
 
 .icons:hover {
@@ -55,7 +57,7 @@
 span {
     padding-right: 30px;
     padding-top: 10px;
-    font-size: 30px;
+    font-size: 26px;
     font-family: 'Amatic SC', cursive;
 
 }
@@ -68,7 +70,7 @@ span {
 }
 
 .about {
-    height: 400px;
+    height: 350px;
     width: 100%;
     background-color: #F7FDF9;
     margin-top: 25px;
@@ -86,21 +88,26 @@ p {
     font-family: 'Barlow Semi Condensed', sans-serif;
     color: #443720;
 }
-.projectsTitle {
+.description{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    color: #443720;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.titleProjects {
     text-align: center;
     font-family: 'Amatic SC', cursive;
-    font-size: 30px;
+    font-size: 26px;
     color: #443720;
-
 }
+
 .projectDiv {
-    height: 300px;
+    height: 320px;
     width: 100%;
     margin-right: 30px;
     background-color: #E7EDE9;
     margin-top: 5px;
-
-    /*border-bottom: 1px solid gray;*/
     display: flex;
     flex-wrap: wrap;
     justify-content:space-around;
@@ -108,7 +115,7 @@ p {
 }
 
 .fairyland {
-    height: 280px;
+    height: 300px;
     width: 47%;
     background-color: #F7FDF9;
     display: flex;
@@ -120,9 +127,9 @@ p {
     height:65%;
     width:70%;
     padding-top: 30px;
-
 }
-@media (min-width: 1130px) {
+
+@media (min-width: 1300px) {
   .imageDiv {
       height:220px;
       width:340px;
@@ -140,12 +147,17 @@ p {
 .fairylandImage{
     height:100%;
     width:100%;
+}
+.fairylandImage2{
+    height:100%;
+    width:100%;
+    border-radius: 15px;
 
 }
 
 
 .recipeBox {
-    height: 280px;
+    height: 300px;
     width: 47%;
     background-color: #F7FDF9;
     display: flex;
@@ -159,11 +171,12 @@ p {
 }
 .projectTitle {
     font-family: 'Amatic SC', cursive;
-    font-size: 28px;
+    font-size: 26px;
     color: #443720;
     border-bottom: 1px solid gray;
     padding: 3px;
     margin-top: 10px;
+    text-decoration: none;
 }
 .projectTitle:hover {
     color: blue;
@@ -179,10 +192,10 @@ p {
       margin: 10px;
   }
   .projectDiv {
-      height: 600px;
+      height: 680px;
   }
   .parent {
-      height: 1100px;
+      height: 1150px;
   }
   span {
       padding-right: 5px;
@@ -194,12 +207,100 @@ p {
       padding-top: 30px;
       font-size: 2em;
    }
+
+}
+
+
+.Div1 {
+    height: 350px;
+    width: 100%;
+    background-color: #F7FDF9;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    margin-top: 25px;
+    margin-bottom: 0px;
+}
+.Div2 {
+    height: 200px;
+    width: 100%;
+    background-color: #E7EDE9;
+    text-align: center;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 20px;
+}
+.midDiv {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.titleView {
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
+    font-size: 26px;
+    color: #443720;
+    margin-top: 0px;
+}
+.fairylandViewImage {
+    height: 290px;
+    width: 35%;
+    margin: 20px;
+    border-radius: 15px;
+}
+.fairylandViewImageShow {
+    height: 290px;
+    width: 35%;
+    margin: 20px;
+    border-radius: 15px;
+}
+@media (max-width: 599px) {
+  .fairylandViewImageShow  {
+     width: 100%;
+     margin: 10px;
+  }
+  .fairylandViewImage  {
+    display: none;
+  }
+  .Div2 {
+      height: 300px;
+  }
+}
+@media screen and (max-width: 900px) and (min-width: 600px) {
+    .fairylandViewImageShow  {
+      display: none
+    }
+    .fairylandViewImage  {
+     width: 100%;
+     height: 100%;
+     margin:10px;
+    }
+}
+
+
+.fairylandImage {
+    width: 100%;
+    height: 100%;
+}
+.bottomDiv {
+    height: 60px;
+    width: 100%;
+    text-align: center;
+    margin-left: 30px;
+    padding-top: 10px;
+    color: #443720;
 }
 
 .footer {
     background: url("https://images.unsplash.com/photo-1470290565452-494169ca14be?auto=format&fit=crop&w=1650&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D") no-repeat;
     background-size: cover;
-    height: 100px;
+    height: 120px;
     width:100%;
     background-position: 0% 98%;
     align-self: flex-end;
@@ -221,13 +322,34 @@ p {
     margin-right: 20px;
     color: #443720;
 }
+.appLink {
+    font-size: 26px;
+    border: 1px solid #443720;
+    height: 30px;
+    margin-top: 10px;
+    padding: 5px;
+    margin-right: 20px;
+    color: #FFB229;
+}
+.appLink:hover {
+    color:blue;
+}
+
 .resumeLink {
     text-decoration: none;
     margin-top: 12px;
+    margin-bottom: 10px;
+}
+.homeLink {
+    text-decoration: none;
+    margin-top: 12px;
+    color: #FFB229;
 }
 .resume:hover {
     color:blue;
-
+}
+.homeLink:hover {
+    color:blue;
 }
 
 .link {
