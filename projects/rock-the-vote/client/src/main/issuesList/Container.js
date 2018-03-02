@@ -10,10 +10,6 @@ class ListContainer extends React.Component{
 
     }
 
-    componentDidMount(){
-        this.props.getList();
-    }
-
 
     genList(){
         this.props.issues.map((issue, index)=>{
