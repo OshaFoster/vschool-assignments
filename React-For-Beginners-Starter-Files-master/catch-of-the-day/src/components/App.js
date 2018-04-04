@@ -4,6 +4,10 @@ import Order from './Order'
 import Inventory from './Inventory'
 
 class App extends React.Component {
+    state = {
+        fishes: {},
+        order: {}
+    };
     render(){
         return(
 
