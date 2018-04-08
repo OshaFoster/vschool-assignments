@@ -2,14 +2,14 @@ import React from "react";
 import Header from "./Header";
 import { words } from "../global"
 import Word from "./Word"
+import Poem from "./Poem"
 
 class App extends React.Component {
-    constructor(){
-        super();
-        this.state = {
-            words: []
+        state = {
+            words: [],
+            poem: ''
         }
-    }
+
     componentDidMount(){
         this.randomItems(words)
     }
@@ -25,20 +25,37 @@ class App extends React.Component {
         this.setState({words : newArray})
     }
 
+    addFoo = (event)  => {
+
+        const newWord = event.target.innerText;
+        let updatedPoem = this.state.poem;
+
+        updatedPoem += ` ${newWord}`;
+        // console.log(updatedPoem);
+        // const poemArray = ['shoe', 'house', 'tickle']
+        // const poemList = poemArray.toString()
+        this.setState({poem : updatedPoem})
+        event.target.style.visibility = 'hidden';
+        // console.log('adding foo')
+    };
+
+
     mapWord(){
         return this.state.words.map((word, i) => {
             return (
                 <Word word={word}
-                        key={word + i}/>
+                        key={word + i}
+                        addFoo={this.addFoo}/>
             )
         })
     }
     render(){
-        console.log(this.state.words)
+        // console.log(this.state.words)
         return(
             <div>
                 <Header/>
                 {this.mapWord()}
+                <Poem poem={this.state.poem}/>
             </div>
 
         )

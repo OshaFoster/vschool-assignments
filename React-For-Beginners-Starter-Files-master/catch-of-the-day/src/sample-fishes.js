@@ -6,7 +6,7 @@ const fishes = {
     desc:
       "Everyones favorite white fish. We will cut it to the size you need and ship it.",
     price: 1724,
-    status: "available"
+    status: "unavailable"
   },
 
   fish2: {
@@ -24,7 +24,7 @@ const fishes = {
     desc:
       "Big, sweet and tender. True dry-pack scallops from the icey waters of Alaska. About 8-10 per pound",
     price: 1684,
-    status: "unavailable"
+    status: "available"
   },
 
   fish4: {

@@ -1,8 +1,9 @@
 import React from "react";
 
 export default function Word(props){
+// console.log(props)
 
     return (
-        <p>{props.word}</p>
+        <button onClick={props.addFoo}>{props.word}</button>
     )
 }
