@@ -3,7 +3,7 @@ import glamorous from "glamorous";
 
 function Header(){
     const HeaderDiv = glamorous.div({
-        backgroundColor: "red",
+        backgroundColor: "grey",
         height: "200px",
         display: "flex",
         justifyContent: "center",
@@ -19,16 +19,16 @@ function Header(){
     const HeaderImage = glamorous.div({
         height: '184px',
         width: "184px",
-        backgroundImage: "url(https://images.unsplash.com/photo-1516205651411-aef33a44f7c2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c3f046fc34580ce265fdc17116bca02a&auto=format&fit=crop&w=1000&q=80)",
+        backgroundImage: "url(https://images.unsplash.com/photo-1520262389826-d559a9aca921?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e480accd20ff34c5d760e31d143c1861&auto=format&fit=crop&w=2468&q=80https://images.unsplash.com/photo-1520262389826-d559a9aca921?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e480accd20ff34c5d760e31d143c1861&auto=format&fit=crop&w=2468&q=80)",
         borderRadius: "50%",
-        marginLeft: "30px",
+        marginLeft: "30px"
 
     });
 
     return(
 
         <HeaderDiv>
-            <HeaderH1>Header</HeaderH1>
+            <HeaderH1>Poet</HeaderH1>
         <HeaderImage/>
         </HeaderDiv>
     )

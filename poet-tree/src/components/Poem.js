@@ -1,9 +1,6 @@
 import React from "react";
 
 export default function Poem(props){
-console.log(props)
-
-
 
     return (
 

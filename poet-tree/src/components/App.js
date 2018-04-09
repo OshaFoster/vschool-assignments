@@ -14,6 +14,7 @@ class App extends React.Component {
         this.randomItems(words)
     }
 
+
     randomItems(words){
 
         let newArray = []
@@ -45,12 +46,14 @@ class App extends React.Component {
             return (
                 <Word word={word}
                         key={word + i}
-                        addFoo={this.addFoo}/>
+                        addFoo={this.addFoo}
+                        poem={this.state.poem}
+                    />
             )
         })
     }
     render(){
-        // console.log(this.state.words)
+
         return(
             <div>
                 <Header/>
