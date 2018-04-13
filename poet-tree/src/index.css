@@ -1,21 +1,5 @@
 body {
     margin: 0;
+    padding: 10px;
+    background-color: #fdfdfd;
 }
-
-.wordButton {
-    color: black;
-    background: #fff;
-    border-color: black;
-
-
-}
-/* button from react tutorial, transform */
-
-/* button[disabled],
-input[type=submit][disabled] {
-  color: #d12028;
-  background: #fff;
-  border-color: #d12028;
-  -webkit-transform: rotate(-10deg) scale(2) translateX(50%) translateY(-50%);
-          transform: rotate(-10deg) scale(2) translateX(50%) translateY(-50%);
-} */

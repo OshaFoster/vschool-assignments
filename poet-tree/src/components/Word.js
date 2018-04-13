@@ -12,7 +12,7 @@ export default class Word extends React.Component {
         }
         return 0;
         //pick a random number between -10 and 10, return that number
-        //multply by .33
+
     }
 
     randomMargin(){
@@ -34,9 +34,9 @@ export default class Word extends React.Component {
         const skew = this.randomSkew();
 
         const Button = glamorous.button({
-            color: "black",
-            background: "#fff",
-            borderColor: "black",
+            color: "#fdfdfd",
+            background: "#676767",
+            borderColor: "#898985",
             transform: `rotate(${skew}deg)`,
             margin: `${this.randomMargin()}px ${this.randomMargin()}px ${this.randomMargin()}px ${this.randomMargin()}px`,
         });
