@@ -25,7 +25,8 @@ const RefreshButton = glamorous.button ({
 class App extends React.Component {
         state = {
             words: [],
-            poem: ''
+            poem: [],
+
         }
 
     componentDidMount(){
@@ -49,7 +50,7 @@ class App extends React.Component {
         const newWord = event.target.innerText;
         let updatedPoem = this.state.poem;
 
-        updatedPoem += ` ${newWord}`;
+        updatedPoem += `${newWord}`;
         // console.log(updatedPoem);
         // const poemArray = ['shoe', 'house', 'tickle']
         // const poemList = poemArray.toString()
@@ -93,7 +94,7 @@ class App extends React.Component {
                         <Poem poem={this.state.poem}/>
                     </PoemContainer>
                     {this.mapWord()}
-                    <RefreshButton>Refresh</RefreshButton>
+                    <RefreshButton onClick={()=> this.randomItems(words)}>Refresh</RefreshButton>
                 </WordsDiv>
 
             </div>
